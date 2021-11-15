@@ -34,13 +34,15 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-  font-size: 1rem;
   font-weight: 500;
   line-height: 1.4;
   color: #ffffff;
   text-align: left;
   background-color: #0C0E20;
+<<<<<<< Updated upstream
   font-size: 30px;
+=======
+>>>>>>> Stashed changes
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
