@@ -39,10 +39,6 @@ body {
   color: #ffffff;
   text-align: left;
   background-color: #0C0E20;
-<<<<<<< Updated upstream
-  font-size: 30px;
-=======
->>>>>>> Stashed changes
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
