@@ -1,0 +1,24 @@
+<section class="cta-video <?php block_field('additional-class'); ?>">
+    <div class="container">     
+        <div class="row">
+
+            <div class="col-12 col-lg-6 cta-video__content-col">
+                <div class="cta-video__content">
+                    <div class="cta-video__header section-header">
+                        <h2 class="section-header__header"><?php block_field('title'); ?></h2>
+                        <p class="section-header__text"><?php block_field('subtitle'); ?></p>
+                    </div>
+                    <a href="#" class="cta-video__button btn btn-secondary">Start Trading Now</a>
+                    <div class="cta-video__buy-links buy-links">
+                        <a href="#" class="btn-app -store"></a>
+                        <a href="#" class="btn-app -google"></a>
+                    </div>
+                </div>                
+            </div>
+            <div class="col-12 col-lg-6 cta-video__video-col">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/temp/video-preview-1.jpg" alt="" class="cta-video__video" data-aos="fade-in" data-aos-duration="1200">
+            </div>
+
+        </div>
+    </div>
+</section>

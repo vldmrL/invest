@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+#adminmenu div.wp-menu-name {
+  padding: 8px 8px 9px 36px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.gcb-editor-form {
+  background-color: #F4F4F5;
+  color: #282844;
+  -webkit-box-shadow: 0px 0px 20px #7457fe24;
+          box-shadow: 0px 0px 20px #7457fe24;
+}
+
+.block-preview {
+  background-color: #0C0E20;
+  min-height: 150px;
+  max-height: 400px;
+  color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.acf-preview {
+  height: 100%;
+}
+
+.acf-preview img {
+  width: 100%;
+  height: auto;
+}
+
+.acf-field.disabled .acf-label {
+  pointer-events: none;
+}
+
+.acf-field.disabled label {
+  pointer-events: none;
+}
+
+.acf-field.disabled input {
+  pointer-events: none;
+  background-color: #e9ecef;
+  color: #6c757d;
+  opacity: 0.65;
+}

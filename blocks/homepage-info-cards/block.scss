@@ -1,0 +1,42 @@
+@import '../../scss/_variables';
+@import '../../scss/bootstrap-4.6.0/mixins/breakpoints';
+
+.info-cards {
+
+    &__header {
+        text-align: center;
+    }
+    &__row {
+    }
+    &__col {
+        @include media-breakpoint-down (md) { margin-bottom: 1rem; }
+        &:last-child {  @include media-breakpoint-down (md) { margin-bottom: 0; } }
+    }
+    &__item {
+    }
+}
+
+
+.info-card {
+    height: 100%;
+    padding:1.875rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &__icon {
+        margin-bottom: 2.25rem;
+        width: 7.875rem;
+        height: auto;
+    }
+    &__title {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    &__text {
+        font-size: 1rem;
+        color: $gray-1;
+        margin-bottom: 0;
+    }
+}

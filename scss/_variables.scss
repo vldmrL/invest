@@ -1,0 +1,182 @@
+// colors
+$primary: #764DFF;
+$primary-hover: #923CFF;
+$secondary: #ffffff;
+
+$green: #2DB071;
+$blue: #2F9BFF;
+$blue-1: #7BCFFF;
+
+$gray-1: #797C97;
+$blog-color:#ABB6D8;
+$light:#F4F4F5;
+$footer-link:#D9DBE1;
+$footer-copyright:#8C8C8C;
+
+$dark: #17182E;
+$dark-1: #12233A;
+$darker: #0C0E20;
+$text-color-dark:#282844;
+$text-black:#0C0C0C;
+$black: #000;
+$white: $secondary;
+
+$gradient-light: linear-gradient(90deg, #9B7DFF 25.48%, #764DFF 85.58%);
+
+
+$theme-colors: (
+  "primary": $primary,  
+  "secondary": $secondary  
+);
+
+//body-colors
+$body-bg:$darker;
+$body-color: $white;
+
+
+
+
+
+
+
+//sections and headers
+$section-padding-y: 3.563rem;
+$section-margin-bottom: 10rem;
+$section-skew-deg:-3deg;
+
+//other
+$mb-inner:2.5rem;
+
+//bootstrap spacers modify. You can use mb-inner, px-inner and so on
+$spacers: ( 
+  "4": 1.375rem,
+  "5": 1.875rem,
+  "inner": 2.5rem
+);
+
+
+ 
+
+// fonts 
+$font-family-sans-serif: 'Poppins', sans-serif;
+$font-weight-normal:  500;
+$font-weight-bold: 600;
+$font-weight-bolder: 700;
+
+$font-size-base: 1rem;
+$h1-font-size: 4.688rem;
+$h2-font-size: 3.125rem;
+$h3-font-size: 1.563rem;
+$h4-font-size: 1.25rem;
+$h5-font-size: 1rem;
+$small-font-size: 13px;
+$headings-margin-bottom: 1.063rem;
+$headings-font-weight: 600;
+$headings-line-height: 1.1;
+
+$line-height-base: 1.4;
+$line-height-lg: 1.4;
+$line-height-sm: 1.4;
+
+$border-color:#6F8FBB;
+$border-radius: 8px;
+
+
+// forms 
+$input-btn-padding-y: 0.5rem;     
+$input-btn-padding-x: 1rem;
+$input-btn-font-size: 0.8rem;
+$input-color: $body-color;
+$input-btn-focus-box-shadow: 0 0 0.3rem 0.3rem #6f8fbb4f;
+$input-font-size: 1rem;
+$input-line-height: 2;
+$input-border-radius: 8px;
+$input-placeholder-color: $body-color;
+
+
+//links
+$link-color: #2F9BFF;
+// $link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: none;
+
+
+// buttons 
+$btn-padding-y: 0.75rem;
+$btn-padding-x: 3rem;
+// $btn-padding-x: 2.75rem;
+$btn-font-size: 1.125rem;
+$btn-line-height: 1.4rem;
+$btn-font-weight: 700;
+
+$btn-padding-y-lg: 1rem;
+$btn-padding-x-lg: 3rem;
+$btn-font-size-lg: $btn-font-size;
+
+$btn-font-weight: 700;
+$btn-border-radius: 12px;
+$btn-border-radius-lg: 12px;
+
+
+//navbar
+$navbar-link-font-size: 1.125rem;
+$navbar-dark-color: rgba($white, .95);            
+$navbar-dark-hover-color: $white;          
+// $navbar-dark-active-color: $blue;
+$navbar-dark-active-color: $primary;
+$nav-link-padding-y: 1rem;
+$nav-link-padding-x: 0.875rem;
+$navbar-nav-link-padding-x: 0.875rem;
+// $navbar-padding-y: 1.875rem;
+// $navbar-padding-x: 1rem;  
+
+
+//drpdowns 
+$dropdown-link-color: $body-color;
+$dropdown-link-hover-color: darken($body-color, 15);
+$dropdown-link-hover-bg: #3E4055;
+$dropdown-bg: #3E4055;
+// $dropdown-padding-x:
+$dropdown-item-padding-y: .35rem;
+$dropdown-item-padding-x: 2rem;
+
+
+// breakpoints 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1300px
+);
+
+
+// container 
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1170px
+);
+
+ 
+// Tables
+$table-cell-padding:          .813rem;
+$table-cell-padding-sm:       .3rem;
+$table-color:                 $gray-1;
+$table-bg:                    $dark-1;
+$table-accent-bg:            #1A2F4B;
+$table-hover-bg:             #1A2F4B;
+$table-border-color:          $border-color;
+$table-head-bg:               #1A2F4B;
+$table-head-color:            $white;
+$table-th-font-weight: 400;
+
+$table-dark-color:            #6F8FBB;
+$table-dark-bg:               $dark-1;
+$table-dark-accent-bg:        #1A2F4B;
+$table-dark-hover-color:      $table-dark-color;
+$table-dark-hover-bg:         #1A2F4B;
+$table-dark-border-color:     $border-color;
+
+
+

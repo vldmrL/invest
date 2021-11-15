@@ -1,0 +1,64 @@
+.popular-markets__header {
+  text-align: center;
+}
+
+@media (max-width: 991.98px) {
+  .popular-markets__content-col {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media (min-width: 992px) {
+  .popular-markets__data-col {
+    padding-left: 3rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .popular-markets__data-col {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 2rem;
+    min-height: 400px;
+  }
+}
+
+.popular-markets__table {
+  line-height: 2.125rem;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.popular-markets__table .btn-table {
+  line-height: 2.125rem;
+}
+
+.popular-markets__table .tdata-name {
+  text-align: left;
+}
+
+.popular-markets__table .tdata-icon {
+  width: 2.125rem;
+  height: 2.125rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  margin-right: 0.813rem;
+}
+
+.popular-markets__list {
+  margin-bottom: 4.125rem;
+}
+
+.popular-markets__button {
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 767.98px) {
+  .tdata-sell, .tdata-chg {
+    display: none;
+  }
+}

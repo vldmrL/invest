@@ -1,0 +1,1 @@
+<img src="/wp-content/themes/invest/img/preview/info-cards.jpg" alt="">

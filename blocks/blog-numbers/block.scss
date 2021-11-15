@@ -1,0 +1,32 @@
+@import '../../scss/_variables';
+@import '../../scss/bootstrap-4.6.0/mixins/breakpoints';
+
+.numbers-block {
+    width:100%;
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;    
+
+    &__row {
+        padding:2.75rem 0;
+    }
+
+    &__col {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+    }
+
+    &__number {
+        font-size: 4.375rem; 
+        font-weight: 700;         
+        margin-bottom: .5rem;  
+        line-height: 1;  
+    }
+
+    &__text {
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+}

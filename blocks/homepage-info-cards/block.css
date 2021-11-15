@@ -1,0 +1,48 @@
+.info-cards__header {
+  text-align: center;
+}
+
+@media (max-width: 991.98px) {
+  .info-cards__col {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .info-cards__col:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.info-card {
+  height: 100%;
+  padding: 1.875rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info-card__icon {
+  margin-bottom: 2.25rem;
+  width: 7.875rem;
+  height: auto;
+}
+
+.info-card__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.info-card__text {
+  font-size: 1rem;
+  color: #797C97;
+  margin-bottom: 0;
+}

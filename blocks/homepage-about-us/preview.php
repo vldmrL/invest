@@ -1,0 +1,1 @@
+<img src="/wp-content/themes/invest/img/preview/about-us.jpg" alt="">

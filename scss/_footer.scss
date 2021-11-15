@@ -1,0 +1,80 @@
+.footer {
+
+    background:$text-color-dark;   
+
+    &__menu-row {
+        padding: 4rem 1rem 0;
+        border-bottom: 1px solid $white;
+    }
+    &__menu{
+        margin-bottom: 3rem;
+    }
+
+    &__menu-title {
+        font-size: 1.063rem;
+    }
+
+    &__info-row {
+        padding: 3rem 0;
+    }
+
+    &__brand {
+        display: flex;
+        margin-bottom: 2rem;  
+    }
+
+    &__logo {
+
+    }
+
+    &__email {
+        font-size: 1rem;
+        color:$footer-link;
+        font-weight: 400;
+    }
+
+    &__copyright {
+        font-size: 1rem;
+        color:$footer-copyright;
+        font-weight: 400;
+    }
+
+    &__social {
+        display: flex;        
+        align-items:center;
+        margin-bottom: 2rem;  
+    }
+
+    &__social-link {
+        margin-right: 2rem;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__links {
+        display: flex;        
+        align-items:center;            
+    }
+
+    &__link {    
+        margin-right: 2rem;
+        color:$footer-link;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+
+.footer {
+    .nav {
+        flex-direction: column;
+    }
+    .nav-link {
+        font-size: 0.813rem;
+        font-weight: 400;
+        padding: 0.5rem 0; 
+        color:$footer-link;
+    }
+}

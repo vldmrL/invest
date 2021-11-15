@@ -1,0 +1,1 @@
+<img src="/wp-content/themes/invest/img/preview/cta-right.jpg" alt="">

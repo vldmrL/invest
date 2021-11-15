@@ -1,0 +1,66 @@
+@import '../../scss/_variables';
+@import '../../scss/bootstrap-4.6.0/mixins/breakpoints';
+
+
+.cta-left {    
+    
+
+    &__content-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__header {
+    }
+
+    &__content {
+    }
+
+    &__image-wrap {
+    }
+
+    &__image {
+        width: 100%;
+        height: auto;
+        margin-top: -2rem;
+        margin-bottom: -3rem;
+        @include media-breakpoint-down(md) {
+            margin: 0;
+        }
+    }
+}
+
+
+.list-cards {
+
+    &__item {
+        padding: 1.25rem 2.188rem;        
+        display: flex;
+        align-items:center;
+        margin-bottom: 1rem;
+    }
+
+    &__image-wrap {
+        margin-right: 2rem;
+        padding: 0.5rem;
+        border: 1px solid $border-color;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+    }
+    &__image {
+        width: 100%;
+        height: auto;
+    }
+
+    &__title {
+        margin-bottom: 0;
+    }
+}
+
+
+.theme-light {
+    .list-cards__image-wrap { background: $white; }
+}
