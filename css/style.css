@@ -40,6 +40,7 @@ body {
   color: #ffffff;
   text-align: left;
   background-color: #0C0E20;
+  font-size: 30px;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
