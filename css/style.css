@@ -45,11 +45,7 @@ section {
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
-<<<<<<< Updated upstream
-  font-size: 22px;
-=======
   font-size: 1rem;
->>>>>>> Stashed changes
   font-weight: 500;
   line-height: 1.4;
   color: #ffffff;
