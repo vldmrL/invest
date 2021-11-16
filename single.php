@@ -39,7 +39,7 @@
                 <div class="article-author__name"><?php the_author(); ?></div>
             </div>
 
-            <div class="article__thumbnail"> 
+            <div class="article__thumbnail rounded"> 
                 <?php the_post_thumbnail(); ?>
             </div>
             

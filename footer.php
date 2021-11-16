@@ -72,13 +72,13 @@
 		<div class="row footer__info-row">
 			<div class="col-12 col-md-6">
 				<div class="footer__brand">
-					<div class="footer__logo">Invest.com</div>
+					<div class="footer__logo"><img src="<?php echo get_template_directory_uri(); ?>/img/invest-white.png" alt=""></div>
 					<a href="#" class="footer__email">info@invest.com</a>
 				</div>
 				<div class="footer__copyright">©2021 All rights reserved</div>
 			</div> 
 			<div class="col-12 col-md-6 col-lg-4 offset-lg-2">
-<!-- 
+ 
 				<div class="footer__social">
 					<a href="#" class="footer__social-link fb">
 						<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -108,16 +108,16 @@
 						<path d="M15.4228 0.539062H2.76464C1.6972 0.539062 0.828125 1.40813 0.828125 2.48502V15.2566C0.828125 16.3335 1.6972 17.2025 2.76464 17.2025H13.4769L12.9762 15.455L14.1854 16.5791L15.3284 17.6371L17.3594 19.4319V2.48502C17.3594 1.40813 16.4903 0.539062 15.4228 0.539062ZM11.7765 12.8761C11.7765 12.8761 11.4365 12.4699 11.1531 12.1109C12.3905 11.7614 12.8629 10.9868 12.8629 10.9868C12.4756 11.2419 12.1072 11.4213 11.7765 11.5441C11.3042 11.7425 10.8508 11.8748 10.4068 11.9503C9.49994 12.1204 8.66865 12.0731 7.96017 11.9409C7.42173 11.837 6.95885 11.6858 6.57155 11.5347C6.35428 11.4497 6.11812 11.3458 5.88196 11.2135C5.85362 11.1946 5.82528 11.1852 5.79694 11.1663C5.77805 11.1568 5.7686 11.1474 5.75916 11.1379C5.58912 11.0435 5.49466 10.9774 5.49466 10.9774C5.49466 10.9774 5.94808 11.7331 7.14778 12.092C6.86439 12.451 6.51487 12.8761 6.51487 12.8761C4.42721 12.81 3.63371 11.4402 3.63371 11.4402C3.63371 8.39848 4.994 5.93297 4.994 5.93297C6.35428 4.91275 7.64844 4.94109 7.64844 4.94109L7.7429 5.05445C6.04255 5.54566 5.2585 6.29193 5.2585 6.29193C5.2585 6.29193 5.46632 6.17857 5.81583 6.01799C6.8266 5.574 7.62955 5.4512 7.96017 5.42286C8.01685 5.41341 8.06408 5.40397 8.12076 5.40397C8.69699 5.3284 9.34879 5.3095 10.0289 5.38508C10.9263 5.48899 11.8899 5.75349 12.8723 6.29193C12.8723 6.29193 12.126 5.58345 10.5202 5.09224L10.6524 4.94109C10.6524 4.94109 11.9466 4.91275 13.3068 5.93297C13.3068 5.93297 14.6671 8.39848 14.6671 11.4402C14.6671 11.4402 13.8642 12.81 11.7765 12.8761Z" fill="white"/>
 						</svg>
 					</a>
-				</div> -->
+				</div> 
 
-
+<!-- 
 				<div class="footer__social">
 					<a href="#" class="footer__social-link"><i class="social-icon fb"></i></a>
 					<a href="#" class="footer__social-link"><i class="social-icon twitter"></i></a>
 					<a href="#" class="footer__social-link"><i class="social-icon insta"></i></a>
 					<a href="#" class="footer__social-link"><i class="social-icon ln"></i></a>
 					<a href="#" class="footer__social-link"><i class="social-icon ds"></i></a>
-				</div>
+				</div> -->
 
 				<div class="footer__links">
 					<a href="#" class="footer__link">Legal Documents</a>

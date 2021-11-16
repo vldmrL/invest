@@ -39,9 +39,11 @@ function createCookie(name, value, days) {
 $(document).ready(function () {   
 
 
-    AOS.init();
+    AOS.init({
+        duration: 1000,
+    });
 
-       
+});       
   
 /*
   //mobile nav bg
@@ -75,4 +77,3 @@ $(document).ready(function () {
     });
      */
 
-});

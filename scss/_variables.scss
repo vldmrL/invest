@@ -23,6 +23,9 @@ $white: $secondary;
 
 $gradient-light: linear-gradient(90deg, #9B7DFF 25.48%, #764DFF 85.58%);
 
+$border-color:#6F8FBB;
+$link-color: #2F9BFF;
+
 
 $theme-colors: (
   "primary": $primary,  
@@ -55,7 +58,7 @@ $spacers: (
 );
 
 
- 
+$border-radius: 8px;
 
 // fonts 
 $font-family-sans-serif: 'Poppins', sans-serif;
@@ -78,10 +81,6 @@ $line-height-base: 1.4;
 $line-height-lg: 1.4;
 $line-height-sm: 1.4;
 
-$border-color:#6F8FBB;
-$border-radius: 8px;
-
-
 // forms 
 $input-btn-padding-y: 0.5rem;     
 $input-btn-padding-x: 1rem;
@@ -95,7 +94,6 @@ $input-placeholder-color: $body-color;
 
 
 //links
-$link-color: #2F9BFF;
 // $link-hover-color: darken($link-color, 15%);
 $link-hover-decoration: none;
 

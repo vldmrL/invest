@@ -6,6 +6,46 @@
 // 1) Print custom header/footer scripts from theme option page settings (acf)
 // 1.1) Same for edit page/post custom fields
 
+/*
+//excerpt length
+function my_excerpt_length($length){
+    return 10;
+}
+add_filter('excerpt_length', 'my_excerpt_length');
+
+function new_excerpt_more( $more ) {
+    return '...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
+*/
+
+
+function excerpt($limit) {
+    $excerpt = explode(' ', get_the_excerpt(), $limit);
+    if (count($excerpt)>=$limit) {
+      array_pop($excerpt);
+      $excerpt = implode(" ",$excerpt).'...';
+    } else {
+      $excerpt = implode(" ",$excerpt);
+    }	
+    $excerpt = preg_replace('`[[^]]*]`','',$excerpt);
+    return $excerpt;
+  }
+   
+  function content($limit) {
+    $content = explode(' ', get_the_content(), $limit);
+    if (count($content)>=$limit) {
+      array_pop($content);
+      $content = implode(" ",$content).'...';
+    } else {
+      $content = implode(" ",$content);
+    }	
+    $content = preg_replace('/[.+]/','', $content);
+    $content = apply_filters('the_content', $content); 
+    $content = str_replace(']]>', ']]>', $content);
+    return $content;
+}
 
 //coockie add class to body
 function inv_body_classes( $classes ) {
@@ -29,18 +69,6 @@ function inv_body_classes( $classes ) {
     return $classes;     
 }
 add_filter( 'body_class','inv_body_classes' );
-
-
-//excerpt length
-function my_excerpt_length($length){
-    return 25;
-    }
-add_filter('excerpt_length', 'my_excerpt_length');
-
-function new_excerpt_more( $more ) {
-    return '...';
-}
-add_filter('excerpt_more', 'new_excerpt_more');
 
 
 

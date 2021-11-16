@@ -1,16 +1,22 @@
+//core bootstrap for blog
+@import "blog-scss/_bootstrap-theme-blog";
 
-@import "_bootstrap-theme-blog";
-@import "_theme";
-@import "_nav";
-@import "_footer";
-@import "_elements";
+//general theme parts
+@import "theme-scss/_theme";
+@import "theme-scss/_nav";
+@import "theme-scss/_footer";
+@import "theme-scss/_elements";
 
-@import "_theme-dark";
-@import "_theme-light";
+//genera color themes
+@import "theme-scss/_theme-dark";
+@import "theme-scss/_theme-light";
 
-@import "_blog-general";
-@import "_article";
+//blog-only
+@import "blog-scss/_blog-general";
+@import "blog-scss/_article";
+@import "blog-scss/_category";
 
+//template parts
 @import "template-parts/_slider-category";
 @import "template-parts/_archive-all-articles";
 @import "template-parts/_archive-latest-fullwidth";

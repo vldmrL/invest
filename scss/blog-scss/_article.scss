@@ -1,0 +1,109 @@
+.article {    
+
+    h1 { font-size: 3.25rem; }
+    h2 { font-size: 2.5rem; }
+
+    &__article-info {
+        margin-bottom: $mb-inner;
+    }
+
+    &__title {
+        margin-bottom: $mb-inner;
+        color:$white;
+    }
+
+    &__excerp {        
+        font-size: 1.5rem;
+        color:$white;
+        margin-bottom: $mb-inner;
+    }
+
+    &__author {
+        margin-bottom: $mb-inner;
+    }
+
+    &__thumbnail {
+        margin-bottom: $mb-inner;
+        overflow: hidden;
+    }
+
+    &__body {
+        font-size: 1.3rem;
+        color:$blog-color;
+        margin-bottom: $mb-inner;  
+
+        h2,h3,h4,h5 {  
+            padding-top: 1.25rem;
+            color:$white; 
+            margin-bottom: $mb-inner;
+        }
+
+        li {margin-bottom: .75rem;}
+
+        section {
+            padding: 0;
+            margin-bottom: $mb-inner;
+            margin-top: $mb-inner + $paragraph-margin-bottom;
+            .container {
+                padding: 0;
+                max-width: unset;
+            }
+        }
+    }
+
+    &__share {
+        margin-bottom: $mb-inner;
+    }
+
+    &__banner {
+        margin-bottom: $mb-inner;
+    }
+
+    &__banner-image {
+    }
+
+    .wp-block-image {
+        width: 100%;
+        height: auto;
+        border-radius:$border-radius;
+        overflow: hidden;
+    }
+   
+}
+
+.article-info {
+    
+    &__date {
+        font-size: 1rem;
+        font-weight: 400;
+        color:$blog-color;
+        margin-right: 1rem;
+    }
+
+    &__category {
+        padding: 0.25rem 1rem;
+        background:$dark-1;
+        height: 100%;
+        text-decoration: none!important;
+        color: $blog-color;
+        border-radius: $border-radius;
+    }
+}
+
+.article-author {
+
+    display: flex;
+    align-items:center;
+    &__image {
+        width: 80px;
+        height: 80px;
+        margin-right: 1.5rem;
+        border-radius:50%;
+    }
+
+    &__name {
+        font-size: 1.375rem;
+        color: $white;
+        max-width: 12.5rem;
+    }
+}
