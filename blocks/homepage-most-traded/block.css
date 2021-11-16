@@ -3,15 +3,10 @@
 }
 
 .most-traded__content {
+  background: -o-linear-gradient(6.21deg, #744AFF 0.3%, #7BCFFF 102.94%);
   background: linear-gradient(83.79deg, #744AFF 0.3%, #7BCFFF 102.94%);
   padding: 2.25rem 1.875rem 1.875rem;
   border-radius: 8px;
-}
-
-@media (max-width: 991.98px) {
-  .most-traded__content {
-    padding-bottom: .875rem;
-  }
 }
 
 .most-traded__header {
@@ -25,12 +20,6 @@
   margin-right: auto;
 }
 
-@media (max-width: 991.98px) {
-  .most-traded__col {
-    margin-bottom: 1rem;
-  }
-}
-
 .card-white {
   background: #ffffff;
   color: #0C0C0C;
@@ -41,15 +30,15 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   height: 100%;
   -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .card-white__title {
@@ -72,4 +61,14 @@
   padding-left: 1rem;
   padding-right: 1rem;
   margin-top: auto;
+}
+
+@media (max-width: 991.98px) {
+  .most-traded__content {
+    padding-bottom: 0.875rem;
+  }
+
+  .most-traded__col {
+    margin-bottom: 1rem;
+  }
 }

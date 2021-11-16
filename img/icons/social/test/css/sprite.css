@@ -1,0 +1,45 @@
+.svg-ds {
+	background: url("svg/sprite.css-9c09a3f0.svg") 0 0 no-repeat;
+}
+
+.svg-ds-dims {
+	width: 26px;
+	height: 28px;
+}
+
+.svg-fb {
+	background: url("svg/sprite.css-9c09a3f0.svg") 48.148148148148145% 0 no-repeat;
+}
+
+.svg-fb-dims {
+	width: 28px;
+	height: 28px;
+}
+
+.svg-insta {
+	background: url("svg/sprite.css-9c09a3f0.svg") 100% 0 no-repeat;
+}
+
+.svg-insta-dims {
+	width: 28px;
+	height: 28px;
+}
+
+.svg-ln {
+	background: url("svg/sprite.css-9c09a3f0.svg") 0 100% no-repeat;
+}
+
+.svg-ln-dims {
+	width: 28px;
+	height: 28px;
+}
+
+.svg-twitter {
+	background: url("svg/sprite.css-9c09a3f0.svg") 51.851851851851855% 87.5% no-repeat;
+}
+
+.svg-twitter-dims {
+	width: 28px;
+	height: 24px;
+}
+

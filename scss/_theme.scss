@@ -204,3 +204,49 @@ section {
 
 
 
+
+%svg-common {
+  background: url("../img/icons/socials.svg") no-repeat;
+}
+
+.social-icon {  
+
+  display: inline-block;
+
+  &.ds {
+    @extend %svg-common;
+    background-position: 0 0;
+    width: 26px;
+    height: 28px;
+   }
+  
+   &.fb {
+    @extend %svg-common;
+    background-position: 48.148148148148145% 0;
+    width: 28px;
+    height: 28px;
+  }
+  
+  
+  &.insta {
+    @extend %svg-common;
+    background-position: 100% 0;
+    width: 28px;
+    height: 28px;
+  }
+  
+  
+  &.ln {
+    @extend %svg-common;
+    background-position: 0 100%;
+    width: 28px;
+    height: 28px;
+  }
+  
+  &.twitter {
+    @extend %svg-common;
+    background-position: 51.851851851851855% 87.5%;
+    width: 28px;
+    height: 24px;
+  }
+}
