@@ -11,7 +11,8 @@ $(document).ready(function () {
     if(mobile.matches) {
         swiper.destroy();
         init = false;
-    } else {
+    } 
+    if(desktop.matches) {
       if (!init) {
         init = true;
         var swiperTopArticles = new Swiper(".top-articles__slider", {
@@ -38,16 +39,18 @@ $(document).ready(function () {
     }
   }
 
-  /* On Load
-  **************************************************************/
-  window.addEventListener('load', function() {
   swiperMode();
+
+/*
+  window.addEventListener('load', function() {
+    swiperMode();
   });
 
-  /* On Resize
-  **************************************************************/
   window.addEventListener('resize', function() {
   swiperMode();
   });
+*/
 
 });
+
+$(window).on('resize',swiperMode);

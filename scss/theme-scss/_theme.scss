@@ -34,9 +34,6 @@ img {
   height: auto;
 }
 
-
-
-
 .text-gray {
     color:$gray-1;
 }
@@ -44,6 +41,7 @@ img {
 .rounded {
   border-radius:$border-radius;
 }
+
 img.rounded {
   overflow: hidden;
 }
@@ -81,6 +79,9 @@ section {
     margin-top: 1.25rem;
   }
 }
+
+
+
 
 
 
