@@ -1,7 +1,5 @@
 .all-articles {
 
-    margin-bottom: 0;
-
     &__section-header {
     }
 
@@ -13,7 +11,10 @@
     }
 
     &__item {
-       
+        padding-bottom: 3.75rem;
+        @include media-breakpoint-down(md){
+            padding-bottom: 2rem;
+        }
     }
 
 }

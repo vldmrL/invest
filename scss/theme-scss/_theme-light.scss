@@ -1,0 +1,71 @@
+.theme-light {
+
+    background-color:$white;
+    color:$text-color-dark;
+        
+    .section-header {
+        &__header { color:$text-color-dark; }
+        &__text { color:$text-color-dark; }
+    }    
+
+    .header {
+        background: $gradient-light
+    } 
+
+    .skewed-section {
+        background:$gradient-light;
+    }   
+
+    .bg-dark {
+        color:$white;
+        background:$gradient-light;
+        &::before {
+            background: $gradient-light;
+        }        
+        .section-header {
+            &__header { color:$white; }
+            &__text { color:$white; }
+        }
+    }  
+    
+    .bg-dark-1 {
+        background:$blue-1;
+    }   
+    
+    .card {
+        background:$light;
+        border: 1px solid $border-color;
+        border-radius: $border-radius;
+    }
+
+    .bg-dark {
+        .card {
+            background:#8865F5;
+            color: $white;
+        }
+    }
+
+    .btn-readmore {
+        color:$text-color-dark;
+    }
+
+
+    //utility
+
+    .text-gradient--light  { 
+        color:$primary;       
+        background: -webkit-linear-gradient(266.4deg, #7FD9FF -34.2%, #923CFF 79.64%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width:fit-content;
+    }
+    
+    .text-gray--light {
+        color:$gray-1;
+    }
+   
+}
+
+
+
+

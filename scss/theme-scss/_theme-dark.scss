@@ -1,0 +1,50 @@
+.theme-dark {
+    
+    .section-header {
+        &__header { }
+        &__text { color:$gray-1; }
+    }   
+        
+    .bg-dark { 
+        background-color:$dark;
+        &::before {
+        background-color: $dark;
+        } 
+    }
+    
+    .bg-dark-1 {
+        background-color:$dark-1;
+    }
+
+    .card {
+        background:$dark-1;
+        border: 1px solid $border-color;
+        border-radius: $border-radius;
+    }
+
+    .btn-readmore {
+        color:$white;
+    }
+
+
+    //utility
+
+    .text-gradient--dark { 
+        color:$primary;       
+        background: -webkit-linear-gradient(266.4deg, #7FD9FF -34.2%, #923CFF 79.64%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        width:fit-content;
+    }
+
+    .text-gray--dark {
+        color:$gray-1;
+    }
+
+}
+
+
+
+
+
+
