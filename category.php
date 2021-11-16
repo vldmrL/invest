@@ -6,8 +6,8 @@
     <main id="main" class="blog-main" >
         <div class="container">
 
-			<div class="archive__page-title page-title page-title--underline">
-				<h1 class=" page-title__title text-gradient--dark"><?php single_cat_title('' , true ); ?></h1>
+			<div class="archive__page-title category-page-title category-page-title--underline">
+				<h1 class=" category-page-title__title text-gradient--dark"><?php single_cat_title('' , true ); ?></h1>
 			</div>
 
 			<?php get_template_part( 'template-parts/archive', 'latest-fullwidth' );  ?>

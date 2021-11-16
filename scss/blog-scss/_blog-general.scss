@@ -37,9 +37,23 @@ html {
       margin-bottom: 0;
       margin-top: 1.25rem;
     }
-  }
+}
 
-.page-title {
+
+.blog-page-title {
+    padding-bottom: 1.875rem;    
+    &__title {
+        font-size: 4.375rem;
+        font-weight: 700;
+        margin: 0 auto;
+        text-align: center;
+    }
+    &--underline {
+        border-bottom: 1px solid $border-color;
+    }
+}    
+
+.category-page-title {
     padding-bottom: 2rem;    
     &__title {
         font-size: 2.5rem;
@@ -48,5 +62,6 @@ html {
     }
     &--underline {
         border-bottom: 1px solid $border-color;
-    }    
-}
+    }
+}    
+
