@@ -4,11 +4,11 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .cta-left__image {
@@ -18,20 +18,14 @@
   margin-bottom: -3rem;
 }
 
-@media (max-width: 991.98px) {
-  .cta-left__image {
-    margin: 0;
-  }
-}
-
 .list-cards__item {
   padding: 1.25rem 2.188rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-bottom: 1rem;
 }
 
@@ -44,11 +38,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .list-cards__image {
@@ -62,4 +56,10 @@
 
 .theme-light .list-cards__image-wrap {
   background: #ffffff;
+}
+
+@media (max-width: 991.98px) {
+  .cta-left__image {
+    margin: 0;
+  }
 }
