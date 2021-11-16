@@ -10642,6 +10642,17 @@ html body.theme-dark header.header {
   .latest-news .post-item__exerpt {
     margin-bottom: 1.75rem;
   }
+
+  .top-articles__slider-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .top-articles__item {
+    margin-bottom: 2.5rem;
+  }
 }
 
 @media (max-width: 575.98px) {
