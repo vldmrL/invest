@@ -35,7 +35,7 @@ add_action('wp_enqueue_scripts', 'inv_add_javascript', 100);
 //register styles
 function inv_register_stylesheets() {
 	//core
-	wp_register_style('theme', get_template_directory_uri() . '/css/style.css', array('AOS'), '1.0.0', 'all' );
+	wp_register_style('theme', get_template_directory_uri() . '/css/style.css', array('AOS'), '1.0.2', 'all' );
 	wp_register_style('blog', get_template_directory_uri() . '/css/blog.css', array('AOS'), '1.0.0', 'all' );
 	//tools
 	wp_register_style('AOS', 'https://unpkg.com/aos@2.3.1/dist/aos.css', array(), null, 'all' );
