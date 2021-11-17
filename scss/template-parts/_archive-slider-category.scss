@@ -1,14 +1,26 @@
-.slider-category {
-
+.slider-category {    
+    &__title {
+        color:$blog-color;
+        font-size: 1rem;
+        font-weight: 400;
+    }
     &__slider {
     }
-
     &__slider-wrapper {
+        display: flex;
+        justify-content: space-between;
     }
-
     &__item {
+        padding: 2.125rem;
+        background: $dark-1;
+        border: 1px solid transparent;
+        border-radius: $border-radius;
+        transition: all 0.3s ease-in-out;
+        &:hover {
+            border-color: $border-color;
+        }
     }
-
     &__item-text {
+        color:$blog-color;
     }
 }

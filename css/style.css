@@ -4594,6 +4594,10 @@ img.rounded {
   overflow: hidden;
 }
 
+.--underline {
+  border-bottom: 1px solid #6F8FBB;
+}
+
 section {
   padding: 3.563rem 0;
   margin-bottom: 10rem;
