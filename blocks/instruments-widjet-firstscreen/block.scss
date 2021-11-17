@@ -1,0 +1,26 @@
+@import '../../scss/_variables';
+@import '../../vendor/bootstrap/scss/mixins/breakpoints';
+
+.instruments-widjet-firstscreen {  
+    .block {  
+        font-size: 1.125rem;  
+        &__col {
+        }    
+        &__title {
+        }    
+        &__text {
+            margin-bottom: $mb-inner
+        }    
+        &__bottons {
+            margin-bottom: 1.563rem;
+        }    
+        &__btn {
+        }    
+        &__small {          
+        }    
+        &__small-text {
+        }    
+        &__small-link {
+        }
+    }    
+}
