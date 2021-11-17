@@ -3,6 +3,9 @@
 
 <section class="slider-category">
 	<div class="container">
+		<h6 class="slider-category__title">
+		  CATEGORIES
+		</h6>
 		<div class="slider-category__slider swiper">
 			<div class="slider-category__slider-wrapper swiper-wrapper">
 			<?php

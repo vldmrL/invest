@@ -7,18 +7,16 @@
 @import "theme-scss/_footer";
 @import "theme-scss/_elements";
 
-//genera color themes
+//general color themes
 @import "theme-scss/_theme-dark";
 @import "theme-scss/_theme-light";
 
-//blog-only
+//blog
 @import "blog-scss/_blog-general";
 @import "blog-scss/_article";
-@import "blog-scss/_category";
+@import "blog-scss/_category-page";
 
 //template parts
 @import "template-parts/_archive-slider-category";
-@import "template-parts/_archive-all-articles";
-@import "template-parts/_archive-latest-fullwidth";
-@import "template-parts/_archive-top-articles";
+
 

@@ -11,10 +11,10 @@ function inv_register_scripts() {
 	wp_register_script( 'AOS', 'https://unpkg.com/aos@2.3.1/dist/aos.js', array('jquery'), null, true);		
 	wp_register_script( 'countTo', get_template_directory_uri() . '/vendor/jquery-countTo-master/jquery.countTo.js', array('jquery'), null, true); 
 	//pages
-	wp_register_script( 'theme', get_template_directory_uri() . '/js/theme.js', array('jquery', 'bootstrap', 'AOS', 'swiper'), null, true);
+	wp_register_script( 'theme', get_template_directory_uri() . '/js/theme.js', array('jquery', 'bootstrap', 'AOS'), null, true);
+	wp_register_script( 'blog-homepage', get_template_directory_uri() . '/js/blog-homepage.js', array('theme', 'swiper'), null, true);
+	wp_register_script( 'blog-categoery-page', get_template_directory_uri() . '/js/blog-categoery-page.js', array('theme', 'swiper'), null, true);
 	//template-parts
-	wp_register_script( 'archive-latest-fullwidth', get_template_directory_uri() . '/js/templte-parts/archive-latest-fullwidth.js', array('theme','swiper'), null, true);
-	wp_register_script( 'archive-top-articles', get_template_directory_uri() . '/js/templte-parts/archive-top-articles.js', array('theme','swiper'), null, true);  
 	wp_register_script( 'archive-slider-category', get_template_directory_uri() . '/js/templte-parts/archive-slider-category.js', array('theme','swiper'), null, true);  
 	//blocks
 	wp_register_script( 'about-us-block', get_template_directory_uri() . '/blocks/homepage-about-us/block.js', array('theme', 'swiper'), null, true); 

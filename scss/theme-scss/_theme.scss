@@ -46,6 +46,10 @@ img.rounded {
   overflow: hidden;
 }
 
+.--underline {
+  border-bottom: 1px solid $border-color;
+}
+
 //sections
 section {
   padding: $section-padding-y 0;
@@ -288,3 +292,5 @@ section {
     margin-top: auto;
   }
 }
+
+
