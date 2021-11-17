@@ -2,10 +2,24 @@
   font-size: 1.125rem;
 }
 
+.instruments-widjet-firstscreen .block__title {
+  margin-top: 3rem;
+}
+
 .instruments-widjet-firstscreen .block__text {
   margin-bottom: 2.5rem;
 }
 
 .instruments-widjet-firstscreen .block__bottons {
   margin-bottom: 1.563rem;
+}
+
+.instruments-widjet-firstscreen .block__widjet {
+  min-height: 360px;
+}
+
+@media (max-width: 767.98px) {
+  .instruments-widjet-firstscreen .block__col:nth-of-type(1) {
+    margin-bottom: 2.5rem;
+  }
 }
