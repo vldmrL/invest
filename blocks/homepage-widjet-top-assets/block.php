@@ -14,6 +14,7 @@
                     <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BTCUSDT/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">BTCUSDT Rates</span></a> by TradingView</div> -->
                     <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
                     {
+                    "largeChartUrl": "http://dev-invest.markdev.site/instruments/instriment",
                     "symbol": "<?php block_field('symbol1'); ?>",
                     "colorTheme": "<?php echo substr($_COOKIE["theme"], 6); ?>",
                     "isTransparent": true,
@@ -32,6 +33,7 @@
                     <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BTCUSDT/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">BTCUSDT Rates</span></a> by TradingView</div> -->
                     <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
                     {
+                     "largeChartUrl": "http://dev-invest.markdev.site/instruments/instriment",
                     "symbol": "<?php block_field('symbol2'); ?>",
                     "colorTheme": "<?php echo substr($_COOKIE["theme"], 6); ?>",
                     "isTransparent": true,
@@ -49,6 +51,7 @@
                     <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BTCUSDT/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">BTCUSDT Rates</span></a> by TradingView</div> -->
                     <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
                     {
+                     "largeChartUrl": "http://dev-invest.markdev.site/instruments/instriment",
                     "symbol": "<?php block_field('symbol3'); ?>",
                     "colorTheme": "<?php echo substr($_COOKIE["theme"], 6); ?>",
                     "isTransparent": true,
