@@ -34,7 +34,7 @@
                     "locale": "en",
                     "width": "100%",
                     "height": "100%",
-                    "largeChartUrl": "",
+                    "largeChartUrl": "http://dev-invest.markdev.site/instruments/instriment",
                     "isTransparent": true,
                     "showSymbolLogo": true,
                     "showFloatingTooltip": true,
