@@ -7,7 +7,7 @@
             <div class="col-12 col-lg-6 cta-right__content-col">
                 <div class="cta-right__header section-header">
                     <h2 class="section-header__header"><?php block_field('title'); ?></h2>
-                    <p class="section-header__text"><?php block_field('subtitle'); ?></p>
+                    <p class="section-header__text" data-aos="fade-in"><?php block_field('subtitle'); ?></p>
                 </div>
                 <a href="#" class="cta-right__button btn btn-outline-secondary">Learn More</a>
             </div>            

@@ -40,9 +40,6 @@ function inv_register_stylesheets() {
 	//tools
 	wp_register_style('AOS', 'https://unpkg.com/aos@2.3.1/dist/aos.css', array(), null, 'all' );
 	wp_register_style('swiper', 'https://unpkg.com/swiper@7/swiper-bundle.min.css', array(), null, 'all' );	
-	//other
-	wp_register_style('admin-styles', get_template_directory_uri() . '/css/admin-styles.css', array(), null, 'all' );
-	wp_register_style('login-register', get_template_directory_uri() . '/css/login-register.css', array(), null, 'all' );	
 }
 add_action('wp_enqueue_scripts', 'inv_register_stylesheets');
 
@@ -62,12 +59,12 @@ add_action('wp_enqueue_scripts', 'inv_add_stylesheets');
 //admin styles
 add_action('admin_head', 'inv_admin_styles');
 function inv_admin_styles() {
-	wp_enqueue_style('admin-styles');
+	wp_enqueue_style('admin-styles', get_template_directory_uri() . '/css/admin-styles.css', array(), null, 'all' );
 }
 
 //login page
 function inv_login_logo() { 
-	wp_enqueue_style('login-register');	
+	wp_enqueue_style('login-register', get_template_directory_uri() . '/css/login-register.css', array(), null, 'all' );
  }
 add_action( 'login_enqueue_scripts', 'inv_login_logo' );
 

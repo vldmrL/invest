@@ -1,0 +1,110 @@
+
+.page-template-instrumet-single-page .page__content {
+    padding-top: 5rem;
+}
+
+.instrument {
+
+    &__data {
+    }
+
+    &__numbers {
+    }
+
+    &__buttons {
+    }
+
+    &__description {
+    }
+}
+
+
+.instrument-data {
+    display: flex;
+    align-items:center;
+    &__icon {
+        width:4.375rem;
+        height:4.375rem;
+        margin-right: 1.75rem;
+    }
+
+    &__title {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__name {
+        font-size: 2.188rem;
+        font-weight: 600;
+    }
+
+    &__description {
+        font-size: 1.563rem;
+        text-transform: uppercase;
+        color:$blog-color;        
+    }
+}
+
+.instrument-numbers {
+
+    &_small {
+        font-size: 0.938rem;
+        font-weight: 400;
+        text-transform: uppercase;        
+    }
+
+    &__big {
+        display: flex;
+        align-items:center;
+        font-size: 1.563rem;
+        font-weight: 400;
+    }
+
+    &__number {
+        font-size: 3.125rem;
+        font-weight: 600;
+    }
+
+    &__currancy {       
+        padding: 0 1rem;
+    }
+
+    &__difference {
+    }
+}
+
+.instrument-buttons {
+
+    border-bottom:1px solid $border-color;
+
+    &__small {
+    }
+
+    &__main {
+    }
+
+    &__button {
+    }
+}
+
+.instrument-description {
+
+    &__title {
+    }
+
+    &__text {
+    }
+}
+
+
+
+.btn-green {
+}
+.btn-large {
+}
+.btn-outline-red {
+}
+.text-green {
+}
+.text-blog {
+}

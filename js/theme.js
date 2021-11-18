@@ -38,10 +38,12 @@ function createCookie(name, value, days) {
 
 $(document).ready(function () {   
 
-
-    AOS.init({
-        duration: 1000,
-    });
+    window.setTimeout(function(){
+        AOS.init({
+            duration: 1000,
+        });
+    }, 50);
+   
 
 });       
   

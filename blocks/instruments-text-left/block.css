@@ -1,0 +1,13 @@
+.instruments-text-left .block__text h2,
+.instruments-text-left .block__text h3,
+.instruments-text-left .block__text h4 {
+  color: #ffffff;
+  font-weight: 600;
+  padding-top: 0.5rem;
+}
+
+.instruments-text-left .block__text h2:nth-of-type(1),
+.instruments-text-left .block__text h3:nth-of-type(1),
+.instruments-text-left .block__text h4:nth-of-type(1) {
+  padding-top: 0;
+}

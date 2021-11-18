@@ -46,6 +46,8 @@ img.rounded {
   overflow: hidden;
 }
 
+.border { border:1px solid $border-color;}
+
 .--underline {
   border-bottom: 1px solid $border-color;
 }
@@ -131,6 +133,32 @@ section {
   &:hover {
     color:$primary;
     background:none;
+  }
+}
+
+
+.btn-green {
+  color:$white;
+  background:$green;
+  &:hover {
+    background: darker($green, 15);
+  }
+}
+
+.btn-red {
+  color:$white;
+  background:$red;
+  &:hover {
+    background: darker($red, 15);
+  }
+}
+
+.btn-outline-red {
+  color:$red;
+  background:none;
+  border:1px solid $red;
+  &:hover {
+    color:$white;   
   }
 }
 
