@@ -35,7 +35,23 @@ img {
 }
 
 .text-gray {
-    color:$gray-1;
+  color:$gray-1;
+}
+
+.text-blog {
+  color:$blog-color;
+}
+
+.text-blue {
+  color:$blue;
+}
+
+.text-green {
+   color:$green;
+}
+
+.text-red {
+  color:$red;
 }
 
 .rounded {
@@ -124,11 +140,6 @@ section {
   }
 }
 
-// .btn-flat {
-//   background:none;
-//   border:1px solid $border-color;
-// }
-
 .btn-outline-secondary {
   &:hover {
     color:$primary;
@@ -136,12 +147,11 @@ section {
   }
 }
 
-
 .btn-green {
   color:$white;
   background:$green;
   &:hover {
-    background: darker($green, 15);
+    background: darken($green, 10);
   }
 }
 
@@ -158,7 +168,8 @@ section {
   background:none;
   border:1px solid $red;
   &:hover {
-    color:$white;   
+    color:$white;  
+    border-color: $white; 
   }
 }
 

@@ -1783,7 +1783,7 @@ fieldset:disabled a.btn {
 
 .btn-lg,
 .btn-group-lg > .btn {
-  padding: 1rem 3rem;
+  padding: 1rem 4rem;
   font-size: 1.125rem;
   line-height: 1.4;
   border-radius: 12px;
@@ -2131,8 +2131,8 @@ input[type=button].btn-block {
 
 .btn-lg + .dropdown-toggle-split,
 .btn-group-lg > .btn + .dropdown-toggle-split {
-  padding-right: 2.25rem;
-  padding-left: 2.25rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
 }
 
 .btn-group-vertical {
@@ -4761,6 +4761,22 @@ img {
   color: #797C97;
 }
 
+.text-blog {
+  color: #ABB6D8;
+}
+
+.text-blue {
+  color: #2F9BFF;
+}
+
+.text-green {
+  color: #2DB071;
+}
+
+.text-red {
+  color: #dc3545;
+}
+
 .rounded {
   border-radius: 8px;
 }
@@ -4852,7 +4868,7 @@ section {
 }
 
 .btn-green:hover {
-  background: darker(#2DB071, 15);
+  background: #238757;
 }
 
 .btn-red {
@@ -4872,6 +4888,7 @@ section {
 
 .btn-outline-red:hover {
   color: #ffffff;
+  border-color: #ffffff;
 }
 
 .btn-app {
@@ -5477,7 +5494,8 @@ section {
   color: #797C97;
 }
 
-.page-template-instrumet-single-page .page__content {
+.page-template-instrumet-single-page .page__content .content-area {
+  margin-bottom: 5rem;
   padding-top: 5rem;
 }
 
@@ -5493,7 +5511,7 @@ section {
 .instrument-data__icon {
   width: 4.375rem;
   height: 4.375rem;
-  margin-right: 1.75rem;
+  margin-right: 1.5rem;
 }
 
 .instrument-data__title {
@@ -5535,7 +5553,7 @@ section {
 }
 
 .instrument-numbers__number {
-  font-size: 3.125rem;
+  font-size: 3rem;
   font-weight: 600;
 }
 
@@ -5545,6 +5563,47 @@ section {
 
 .instrument-buttons {
   border-bottom: 1px solid #6F8FBB;
+}
+
+.instrument__widjet-card {
+  height: 308px;
+  overflow: hidden;
+  margin: 0 -1.5rem;
+}
+
+.info-card__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.info-card__item {
+  border-bottom: 1px solid #6F8FBB;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0.875rem 0;
+  font-size: 12px;
+}
+
+.info-card__item:first-child {
+  border-top: 1px solid #6F8FBB;
+}
+
+.info-card__text {
+  color: #ABB6D8;
+  font-size: 12px;
+}
+
+.info-card__number {
+  font-size: 12px;
 }
 
 @media (min-width: 576px) {

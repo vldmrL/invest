@@ -1802,7 +1802,7 @@ fieldset:disabled a.btn {
 
 .btn-lg,
 .btn-group-lg > .btn {
-  padding: 1rem 3rem;
+  padding: 1rem 4rem;
   font-size: 1.125rem;
   line-height: 1.4;
   border-radius: 12px;
@@ -2150,8 +2150,8 @@ input[type=button].btn-block {
 
 .btn-lg + .dropdown-toggle-split,
 .btn-group-lg > .btn + .dropdown-toggle-split {
-  padding-right: 2.25rem;
-  padding-left: 2.25rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
 }
 
 .btn-group-vertical {
@@ -4605,6 +4605,22 @@ img {
   color: #797C97;
 }
 
+.text-blog {
+  color: #ABB6D8;
+}
+
+.text-blue {
+  color: #2F9BFF;
+}
+
+.text-green {
+  color: #2DB071;
+}
+
+.text-red {
+  color: #dc3545;
+}
+
 .rounded {
   border-radius: 8px;
 }
@@ -4696,7 +4712,7 @@ section {
 }
 
 .btn-green:hover {
-  background: darker(#2DB071, 15);
+  background: #238757;
 }
 
 .btn-red {
@@ -4716,6 +4732,7 @@ section {
 
 .btn-outline-red:hover {
   color: #ffffff;
+  border-color: #ffffff;
 }
 
 .btn-app {
