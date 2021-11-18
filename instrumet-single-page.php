@@ -60,6 +60,9 @@
 					<div class="card mb-5">
 						<div class="card-body">
 							<h3 class="text-white">Graph</h3>
+							<div class="instrument__widjet-graph">
+								widjet here
+							</div>
 						</div>
 					</div>
 
