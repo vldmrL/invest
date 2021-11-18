@@ -1,4 +1,4 @@
-<section class="blank-row block <?php block_field('add-class');?>">
+<section class="homepage-widjet-top-weekly block <?php block_field('add-class');?>">
     <div class="container">
         <div class="row">
             <?php if ( !empty(block_value('title')) ) { ?>
@@ -17,7 +17,7 @@
                     <!-- TradingView Widget BEGIN -->
                         <div class="tradingview-widget-container">
                         <div id="tradingview_3a74f"></div>
-                        <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/AAPL/" rel="noopener" target="_blank"><span class="blue-text">Apple</span></a> by TradingView</div>
+                        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/AAPL/" rel="noopener" target="_blank"><span class="blue-text">Apple</span></a> by TradingView</div> -->
                         <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
                         <script type="text/javascript">
                         new TradingView.MediumWidget(
