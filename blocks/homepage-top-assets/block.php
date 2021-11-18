@@ -16,6 +16,7 @@
                     {
                     "symbol": "<?php block_field('symbol1'); ?>",
                     "colorTheme": "<?php echo substr($_COOKIE["theme"], 6); ?>",
+                    "largeChartUrl": "http://dev-invest.markdev.site/instruments/instriment",
                     "isTransparent": true,
                     "locale": "en"
                     }
@@ -34,6 +35,7 @@
                     {
                     "symbol": "<?php block_field('symbol2'); ?>",
                     "colorTheme": "<?php echo substr($_COOKIE["theme"], 6); ?>",
+                    "largeChartUrl": "http://dev-invest.markdev.site/instruments/instriment",
                     "isTransparent": true,
                     "locale": "en"
                     }
@@ -51,6 +53,7 @@
                     {
                     "symbol": "<?php block_field('symbol3'); ?>",
                     "colorTheme": "<?php echo substr($_COOKIE["theme"], 6); ?>",
+                    "largeChartUrl": "http://dev-invest.markdev.site/instruments/instriment",
                     "isTransparent": true,
                     "locale": "en"
                     }

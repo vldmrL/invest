@@ -31,6 +31,7 @@
   "colorTheme": "dark",
   "isTransparent": true,
   "displayMode": "adaptive",
+  "largeChartUrl": "http://dev-invest.markdev.site/instruments/instriment",
   "locale": "en"
 }
   </script>
