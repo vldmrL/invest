@@ -32,14 +32,14 @@
         background:$blue-1;
     }   
     
-    .card {
+    .frame {
         background:$light;
         border: 1px solid $border-color;
         border-radius: $border-radius;
     }
 
     .bg-dark {
-        .card {
+        .frame {
             background:#8865F5;
             color: $white;
         }

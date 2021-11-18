@@ -20,7 +20,7 @@
   margin-right: auto;
 }
 
-.card-white {
+.frame-white {
   background: #ffffff;
   color: #0C0C0C;
   padding: 1.4rem 1rem 1rem 1rem;
@@ -41,20 +41,20 @@
   justify-content: space-between;
 }
 
-.card-white__title {
+.frame-white__title {
   font-size: 1.25rem;
   font-weight: 600;
   text-align: left;
   margin-bottom: 0.75rem;
 }
 
-.card-white__text {
+.frame-white__text {
   font-size: 0.875rem;
   font-weight: 400;
   margin-bottom: 0.75rem;
 }
 
-.card-white__button {
+.frame-white__button {
   background: #0C0C0C;
   width: 100%;
   font-size: 12px;

@@ -85,6 +85,35 @@ function inv_get_author_avatar ( $auth_id ) {
     return $auth_img;      
 }
 
+
+
+//show breadcrumbs
+function show_breadcrumbs(){
+    if (  is_page() && function_exists('dimox_breadcrumbs') && get_field('general-settings_show-breadcrumbs') == 'true' ) {				
+        echo '<div class="container">';
+        dimox_breadcrumbs();
+        echo '</div>';			
+    }	elseif ( !is_page() && function_exists('dimox_breadcrumbs') ) {
+            echo '<div class="container">';
+            dimox_breadcrumbs();
+            echo '</div>';	
+    }	elseif ( is_page_template( 'blog.php' ) && function_exists('dimox_breadcrumbs') ) {
+            echo '<div class="container">';
+            dimox_breadcrumbs();
+            echo '</div>';
+    }
+}
+
+
+//show widjet tape in header
+function show_widjet_tape() {
+    if ( get_field('general-settings_show-stripe-widjet') == true ) {
+        get_template_part( 'template-parts/widjet', 'tape' ); 
+    }
+}
+
+
+
 /*
 //AJAX category function
 add_action( 'wp_ajax_loadPostsArchive', 'load_more_archive' );

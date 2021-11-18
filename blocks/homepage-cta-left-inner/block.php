@@ -1,4 +1,4 @@
-<div class="list-cards__item card <?php block_field('additional-class'); ?>">
+<div class="list-cards__item frame <?php block_field('additional-class'); ?>" data-aos="fade-up">
     <div class="list-cards__image-wrap">
         <img src="<?php block_field('icon'); ?>" alt="" class="list-cards__image">
     </div>

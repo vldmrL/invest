@@ -53,18 +53,13 @@
 		 
 		  </div>
 		</nav>
-
-		<?php					
-			if ( get_field('general-settings_show-stripe-widjet') == true ) {
-				get_template_part( 'template-parts/widjet', 'tape' ); 
-			}		
-		?>
 		
-		<?php if ( function_exists( 'dimox_breadcrumbs' ) && !is_page_template('template-homepage.php') ) {
-			echo '<div class="container">';
-			dimox_breadcrumbs();
-			echo '</div>';
-		} ?>			
+		
+		<?php 
+		//utilities
+		show_widjet_tape(); 
+		show_breadcrumbs(); 		
+		?>	
 
 	</header>
 	

@@ -4613,6 +4613,10 @@ img.rounded {
   overflow: hidden;
 }
 
+.border {
+  border: 1px solid #6F8FBB;
+}
+
 .--underline {
   border-bottom: 1px solid #6F8FBB;
 }
@@ -4684,6 +4688,34 @@ section {
 .btn-outline-secondary:hover {
   color: #764DFF;
   background: none;
+}
+
+.btn-green {
+  color: #ffffff;
+  background: #2DB071;
+}
+
+.btn-green:hover {
+  background: darker(#2DB071, 15);
+}
+
+.btn-red {
+  color: #ffffff;
+  background: #dc3545;
+}
+
+.btn-red:hover {
+  background: darker(#dc3545, 15);
+}
+
+.btn-outline-red {
+  color: #dc3545;
+  background: none;
+  border: 1px solid #dc3545;
+}
+
+.btn-outline-red:hover {
+  color: #ffffff;
 }
 
 .btn-app {
@@ -5161,7 +5193,7 @@ section {
   background-color: #12233A;
 }
 
-.theme-dark .card {
+.theme-dark .frame {
   background: #12233A;
   border: 1px solid #6F8FBB;
   border-radius: 8px;
@@ -5235,13 +5267,13 @@ section {
   background: #7BCFFF;
 }
 
-.theme-light .card {
+.theme-light .frame {
   background: #F4F4F5;
   border: 1px solid #6F8FBB;
   border-radius: 8px;
 }
 
-.theme-light .bg-dark .card {
+.theme-light .bg-dark .frame {
   background: #8865F5;
   color: #ffffff;
 }

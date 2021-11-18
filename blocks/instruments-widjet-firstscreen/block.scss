@@ -1,7 +1,7 @@
 @import '../../scss/_variables';
 @import '../../vendor/bootstrap/scss/mixins/breakpoints';
 
-.instruments-widjet-firstscreen {  
+.instruments-widjet-firstscreen {     
     .block {  
         font-size: 1.125rem;  
         &__col {
@@ -12,8 +12,14 @@
             }
         }    
         &__title {
-            margin-top: 3rem;
+            margin-top: 2rem;
         }    
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
         &__text {
             margin-bottom: $mb-inner
         }    
@@ -30,7 +36,13 @@
         }
 
         &__widjet {
-            min-height: 360px;
+            height: 360px;
         }
     }    
+}
+
+.parent-pageid-289 {
+    .instruments-widjet-firstscreen {
+        margin-top: 2.75rem; 
+    }
 }

@@ -2,12 +2,12 @@
     <div class="container">
         <div class="row block">
 
-            <div class="col-md-6 block__col"> 
+            <div class="col-md-6 col-lg-5 block__col"> 
                 <div class="block__content">
-                    <h1 class="h2 block__title text-gradient--dark" >
+                    <h1 class="h2 block__title text-gradient--dark" data-aos="fade-in">
                         <?php block_field('title'); ?>
                     </h1>
-                    <div class="block__text text-gray--dark">
+                    <div class="block__text text-gray--dark" data-aos="fade-up">
                         <?php block_field('text'); ?>
                     </div>
                     <div class="block__bottons">
@@ -20,7 +20,7 @@
                 </div>        
             </div>   
 
-            <div class="col-md-6 block__col">  
+            <div class="col-md-6 col-lg-6 offset-lg-1 block__col">  
                 <div class="block__widjet bg-dark-1 rounded">
                     <!-- TradingView Widget BEGIN -->
                     <div class="tradingview-widget-container">
