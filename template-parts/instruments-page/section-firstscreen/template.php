@@ -1,21 +1,36 @@
-<section class="instruments-widjet-firstscreen <?php block_field('add-class'); ?>">    
+<?php 
+// available $args['...']
+// title
+// text
+// button_link
+// button_text
+// small_text
+// small_link_url
+// small_link_text
+// add_class
+?>
+
+<?php wp_enqueue_style('instruments-page-section-firstscreen'); ?>
+
+
+<section class="instruments-widjet-firstscreen block <?php echo $args['add_class']; ?>">    
     <div class="container">
         <div class="row block">
 
             <div class="col-md-6 col-lg-5 block__col"> 
                 <div class="block__content">
                     <h1 class="h2 block__title text-gradient--dark" data-aos="fade-in">
-                        <?php block_field('title'); ?>
+                        <?php echo $args['title']; ?>
                     </h1>
                     <div class="block__text text-gray--dark" data-aos="fade-up">
-                        <?php block_field('text'); ?>
+                        <?php echo $args['text']; ?>
                     </div>
                     <div class="block__bottons">
-                        <a href="<?php block_field('button-link'); ?>" class="block__btn btn btn-secondary"><?php block_field('button-text'); ?></a>
+                        <a href="<?php echo $args['button_link']; ?>" class="block__btn btn btn-secondary"><?php echo $args['button_text']; ?></a>
                     </div>                
                     <div class="block__small">
-                        <span class="block__small-text text-gray--dark"><?php block_field('small-text'); ?></span>
-                        <a href="<?php block_field('small-link-url'); ?>" class="block__small-link"><?php block_field('small-link-text'); ?></a>
+                        <span class="block__small-text text-gray--dark"><?php echo $args['small_text']; ?></span>
+                        <a href="<?php echo $args['small_link_url']; ?>" class="block__small-link"><?php echo $args['small_link_text']; ?></a>
                     </div> 
                 </div>        
             </div>   
@@ -34,7 +49,7 @@
                         "locale": "en",
                         "width": "100%",
                         "height": "100%",
-                        "largeChartUrl": "http://dev-invest.markdev.site/instruments/instrument",
+                        "largeChartUrl": "",
                         "isTransparent": true,
                         "showSymbolLogo": true,
                         "showFloatingTooltip": true,
@@ -75,3 +90,7 @@
         </div>
     </div>
 </section>
+
+
+
+<?php //wp_enqueue_style('instruments-page-section-firstscreen', get_template_directory_uri() . '/template-parts/instruments-page/section-firstscreen.css', array('theme', 'AOS'), null, 'all'  ); ?>
