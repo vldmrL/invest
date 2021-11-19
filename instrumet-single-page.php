@@ -31,6 +31,8 @@
 
 					<div class="instrument__buttons instrument-buttons pb-inner mb-inner">
 						<div class="instrument-buttons__small">
+							<a href="#" class="instrument-buttons__favoutite"><i class="icon icon-star"></i> Add favorite</a>
+							<a href="#" class="instrument-buttons__alert"><i class="icon icon-alert"></i> Set alert</a>
 						</div>
 						<div class="instrument-buttons__main">
 							<button class="instrument-buttons__button btn btn-green btn-lg mr-3">BUY</button>

@@ -2,9 +2,7 @@
 
 // Utilities functions here
 
-// !!!TODO: 
-// 1) Print custom header/footer scripts from theme option page settings (acf)
-// 1.1) Same for edit page/post custom fields
+
 
 /*
 //excerpt length
