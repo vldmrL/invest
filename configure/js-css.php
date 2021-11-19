@@ -40,6 +40,8 @@ function inv_register_stylesheets() {
 	//tools
 	wp_register_style('AOS', 'https://unpkg.com/aos@2.3.1/dist/aos.css', array(), null, 'all' );
 	wp_register_style('swiper', 'https://unpkg.com/swiper@7/swiper-bundle.min.css', array(), null, 'all' );	
+	//blocks
+	wp_register_style('instruments-page-section-firstscreen', get_template_directory_uri() . '/template-parts/instruments-page/section-firstscreen.css', array('theme', 'AOS'), null, 'all'  );
 }
 add_action('wp_enqueue_scripts', 'inv_register_stylesheets');
 
