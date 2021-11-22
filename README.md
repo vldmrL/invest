@@ -5,20 +5,18 @@ Frameworks: jQuery-3.5.1, Bootstrap-4.6.0
 Core plugins: ACF, genesis custom blocks
 
 ## Readme links
----
 Document anchors
 - [General description](#description)
 - [File structure](#file-structure)
 - [Theme options](#theme-options)
 - [Custom blocks](#custom-blocks)
-  - [Block naming](#s)
-  - [Block structure](#s)
-  - [Block templates](#s)
+  - [Block naming](#block-naming)
+  - [Block structure](#block-structure)
+  - [Block templates](#block-templates)
 - [Theme javascript](#theme-javascript)
 - [Theme css](#theme-css)
 
 ## Description
----
 ***Some general project description here***
 Project folder contains files for:
   main website
@@ -26,7 +24,6 @@ Project folder contains files for:
   various landing pages
 
 ## File structure
----
 General project file structure. More details can be found in each folder.
 ```
 theme folder/
@@ -43,7 +40,6 @@ theme folder/
 ```
 ---
 ## Theme options
----
 Currently the following option pages are available from admin panel.
 **Invest theme** 
 - default theme styling 
@@ -63,7 +59,6 @@ Currently the following option pages are available from admin panel.
 - marketing (compaign id, affiliate id and post views). All fields are disabled, they are used to show info passed to CRM
 
 ## Custom blocks
----
 The project uses modular devolopment system where possible.
 All common website pages should be divided into *user sreens* (sections). For this purpose we use gutengerg custom blocks functionality, with limited user input.
 
@@ -76,8 +71,7 @@ There are several block categories available from Edit Page (or Edit Post) scree
 **Invest-Blank** - main theme template manager blocks, used for creating pages.
 **All blocks should be added to their respectful category.*
 
-#### Block naming
----
+### Block naming
 *For non-blank blocks*, please try to keep `${what}-${where}-${name}` structure.
 Example: widget-homepage-market-overview
 
@@ -92,8 +86,7 @@ blank-col--image-title-text-btn
 **blank-row** - parent blocks that have "inner blocks" field available, where another guttenberg blocks can be placed (images, embed video, text editor, other custom blocks, etc). They should be wrapped with `<section></section>` tags.
 **blank-col** - child blocks that can be put inside blank-row--* blocks.
 
-#### Block structure
----
+### Block structure
 Documentation about gutenberg custom blocks can be found [here](url).
 **A few common rules:**
 - please, follow the [naming](#block-naming)
@@ -105,8 +98,8 @@ Documentation about gutenberg custom blocks can be found [here](url).
 - dont forget to add logical search keywords
 - each block should have a preview
 
-#### Block templates
----
+
+### Block templates
 For a faster and more smooth workflow we use predefiend *blank blocks* as a template loaders with some user input fields. Input data is passed to template using `get_template_part( $template_path,, $input_data` function. 
 All blank blocks are accessable from *Invest Blank* category and contain available user input fields in their [naming](#block-naming). 
 ---
