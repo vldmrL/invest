@@ -99,7 +99,7 @@ Documentation about gutenberg custom blocks can be found [here](url).
 - each block should have a preview
 
 
-
+### Block templates
 For a faster and more smooth workflow we use predefiend *blank blocks* as a template loaders with some user input fields. Input data is passed to template using `get_template_part( $template_path,, $input_data` function. 
 All blank blocks are accessable from *Invest Blank* category and contain available user input fields in their [naming](#block-naming). 
 ---
@@ -120,3 +120,9 @@ All blank blocks are accessable from *Invest Blank* category and contain availab
 **Usefull tips**
 - By default, you can access filed values using `echo $args['field_slug']`. If you copy/pasted template from block folder, you can also use variables. Example: `echo $title`.
 - If your block needs some additional styles or scripts to work, please add them using `wp_enqueue_script(script-id)` and `wp_enqueue_style('style-id')`
+
+## Theme Javascript
+Js info here
+
+## Theme css
+Css info here
