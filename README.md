@@ -52,6 +52,7 @@ Currently, the following option pages are available from the admin panel.
 - data to show in Tradingview widgets.
 
 *All of these options are used globally across the site, please change them with care.*
+
 ---
 **Edit Page** screen
 - general settings (breadcrumbs, widget in header, color theme restrictions)
