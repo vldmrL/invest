@@ -119,7 +119,7 @@ define( 'DISALLOW_FILE_EDIT', true );
 //limit upload image size
 function whero_limit_image_size($file) {	
 	$image_size = $file['size']/1024;
-	$limit = 600;
+	$limit = 500;
 	$is_image = strpos($file['type'], 'image');
 
 	if ( ( $image_size > $limit ) && ($is_image !== false) )

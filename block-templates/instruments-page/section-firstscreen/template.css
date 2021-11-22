@@ -1,0 +1,43 @@
+.instruments-firstscreen .block {
+    font-size: 1.125rem;
+  }
+  
+  .instruments-firstscreen .block__title {
+    margin-top: 2rem;
+  }
+  
+  .instruments-firstscreen .block__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .instruments-firstscreen .block__text {
+    margin-bottom: 2.5rem;
+  }
+  
+  .instruments-firstscreen .block__bottons {
+    margin-bottom: 1.563rem;
+  }
+  
+  .instruments-firstscreen .block__widjet {
+    height: 360px;
+  }
+  
+  .parent-pageid-289 .instruments-firstscreen {
+    margin-top: 2.75rem;
+  }
+  
+  @media (max-width: 767.98px) {
+    .instruments-firstscreen .block__col:nth-of-type(1) {
+      margin-bottom: 2.5rem;
+    }
+  }

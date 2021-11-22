@@ -7,63 +7,54 @@
         <div class="row top-assets__row">
 
             <div class="col-12 col-lg-4 top-assets__item">
-
-                <!-- TradingView Widget BEGIN -->
-                <div class="tradingview-widget-container asset frame">
-                    <div class="tradingview-widget-container__widget"></div>
-                    <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BTCUSDT/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">BTCUSDT Rates</span></a> by TradingView</div> -->
-                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
-                    {
-                    "largeChartUrl": "http://dev-invest.markdev.site/instruments/instrument",
-                    "symbol": "<?php block_field('symbol1'); ?>",
-                    "colorTheme": "<?php echo substr($_COOKIE["theme"], 6); ?>",
-                    "isTransparent": true,
-                    "locale": "en"
+                <div class="top-assets__item-wrap asset card">
+                    <?php
+                    if ( empty(block_value('symbol1')) ) {
+                        $symbol1 = block_value('symbol1'); //needs fix
+                    } else {
+                        $symbol1 = block_value('symbol1');
                     }
-                    </script>
-                </div>
-                <!-- TradingView Widget END -->
-
+                    get_template_part( 'template-parts/tradeview-widjets/single-ticker/widjet', null, array(
+                        'symbol' => $symbol1                      
+                    ));
+                    ?>
+                </div>         
             </div>
             
             <div class="col-12 col-lg-4 top-assets__item">
-                <!-- TradingView Widget BEGIN -->
-                <div class="tradingview-widget-container asset frame">
-                    <div class="tradingview-widget-container__widget"></div>
-                    <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BTCUSDT/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">BTCUSDT Rates</span></a> by TradingView</div> -->
-                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
-                    {
-                     "largeChartUrl": "http://dev-invest.markdev.site/instruments/instrument",
-                    "symbol": "<?php block_field('symbol2'); ?>",
-                    "colorTheme": "<?php echo substr($_COOKIE["theme"], 6); ?>",
-                    "isTransparent": true,
-                    "locale": "en"
+                <div class="top-assets__item-wrap asset card">
+                    <?php
+                    if ( empty(block_value('symbo2l')) ) {
+                        $symbol2 = block_value('symbol2'); //needs fix
+                    } else {
+                        $symbol2 = block_value('symbol2');
                     }
-                    </script>
-                </div>
-                <!-- TradingView Widget END -->
+                    get_template_part( 'template-parts/tradeview-widjets/single-ticker/widjet', null, array(
+                        'symbol' => $symbol2                        
+                    ));
+                    ?>
+                </div>   
             </div>    
 
             <div class="col-12 col-lg-4 top-assets__item">
-                <!-- TradingView Widget BEGIN -->
-                <div class="tradingview-widget-container asset frame">
-                    <div class="tradingview-widget-container__widget"></div>
-                    <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/BTCUSDT/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text">BTCUSDT Rates</span></a> by TradingView</div> -->
-                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-single-quote.js" async>
-                    {
-                     "largeChartUrl": "http://dev-invest.markdev.site/instruments/instrument",
-                    "symbol": "<?php block_field('symbol3'); ?>",
-                    "colorTheme": "<?php echo substr($_COOKIE["theme"], 6); ?>",
-                    "isTransparent": true,
-                    "locale": "en"
+                <div class="top-assets__item-wrap asset card">
+                    <?php
+                    if ( empty(block_value('symbol3')) ) {
+                        $symbol3 = block_value('symbol3'); //needs fix
+                    } else {
+                        $symbol3 = block_value('symbol3');
                     }
-                    </script>
-                </div>
-                <!-- TradingView Widget END -->
+                    get_template_part( 'template-parts/tradeview-widjets/single-ticker/widjet', null, array(
+                        'symbol' => $symbol3                      
+                    ));
+                    ?>
+                </div>   
             </div>
 
         </div>
     </div>
 </section>
 
+
+<?php unset($symbol1, $symbol2, $symbol3); ?>
 

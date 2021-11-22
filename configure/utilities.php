@@ -15,10 +15,9 @@ function new_excerpt_more( $more ) {
     return '...';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
-
 */
 
-
+// limit excerpt length custom
 function excerpt($limit) {
     $excerpt = explode(' ', get_the_excerpt(), $limit);
     if (count($excerpt)>=$limit) {
@@ -30,7 +29,8 @@ function excerpt($limit) {
     $excerpt = preg_replace('`[[^]]*]`','',$excerpt);
     return $excerpt;
   }
-   
+
+ // limit content length custom  
   function content($limit) {
     $content = explode(' ', get_the_content(), $limit);
     if (count($content)>=$limit) {
@@ -70,20 +70,6 @@ add_filter( 'body_class','inv_body_classes' );
 
 
 
-//get user avatar
-function inv_get_author_avatar ( $auth_id ) {
-    $auth_id_string = 'user_' . $auth_id;  
-    $auth_img = get_field( 'avatar', $auth_id_string );
-    if (empty($auth_img)) {
-        $auth_img  = get_avatar_url( $auth_id , array(
-            'size' => 80,
-            'default'=>'mystery',
-        ));
-    } 
-    return $auth_img;      
-}
-
-
 
 //show breadcrumbs
 function show_breadcrumbs(){
@@ -101,15 +87,6 @@ function show_breadcrumbs(){
             echo '</div>';
     }
 }
-
-
-//show widjet tape in header
-function show_widjet_tape() {
-    if ( get_field('general-settings_show-stripe-widjet') == true ) {
-        get_template_part( 'template-parts/widjet', 'tape' ); 
-    }
-}
-
 
 
 /*

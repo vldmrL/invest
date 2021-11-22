@@ -12,63 +12,13 @@
                 </ul>
                 <a href="<?php block_field('button-link'); ?>" class="block__button btn btn-secondary"><?php block_field('button-text'); ?></a>
                 <div class="block__buy-links buy-links">
-                    <a href="#" class="btn-app -store"></a>
-                    <a href="#" class="btn-app -google"></a>
+                    <a href="<?php the_field('app-links_apple-download-link', 'options'); ?>" class="btn-app -store"></a>
+                    <a href="<?php the_field('app-links_google-download-link', 'options'); ?>" class="btn-app -google"></a>
                 </div>
-
-
             </div>
 
-            <div class="col-lg-8 block__data-col"  data-aos="fade-up">
-                <div class="block__data">
-                
-                    <!-- TradingView Widget BEGIN -->
-                    <div class="tradingview-widget-container">
-                    <div class="tradingview-widget-container__widget"></div>
-                    <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Crypto</span></a> by TradingView</div> -->
-                    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
-                    {
-                    "colorTheme": "dark",
-                    "dateRange": "12M",
-                    "showChart": false,
-                    "locale": "en",
-                    "width": "100%",
-                    "height": "100%",
-                    "largeChartUrl": "http://dev-invest.markdev.site/instruments/instrument",
-                    "isTransparent": true,
-                    "showSymbolLogo": true,
-                    "showFloatingTooltip": true,
-                    "tabs": [
-                        {
-                        "title": "Crypto",
-                        "symbols": [
-                            {
-                            "s": "COINBASE:BTCUSD",
-                            "d": "BTC"
-                            },
-                            {
-                            "s": "BINANCE:BTCUSDT"
-                            },
-                            {
-                            "s": "BITSTAMP:BTCUSD"
-                            },                            
-                            {
-                            "s": "BITSTAMP:ETHUSD"
-                            },
-                            {
-                            "s": "BINANCE:TRXUSDT"
-                            }, {
-                            "s": "BINANCE:ETHUSDT"
-                            }
-                            
-                        ]
-                        }
-                    ]
-                    }
-                    </script>
-                    </div>
-                    <!-- TradingView Widget END -->
-                </div>
+            <div class="col-lg-8 block__data-col"  data-aos="fade-up">           
+               <?php get_template_part('template-parts/tradeview-widjets/market-overview/widjet'); ?>            
             </div>
 
         </div>

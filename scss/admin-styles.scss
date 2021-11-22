@@ -24,9 +24,16 @@ img {
     max-height: 400px;
     color:$white;
     display: flex;
+    flex-direction: column;
     align-items:center;
     justify-content: center;
+    overflow: hidden;
 }
+.components-modal__content {
+    .components-modal__header { font-weight: 400; }
+    .gcb-editor-form > h3 { display: none; }
+}
+
 
 //util
 .d-none { display: none !important; }
@@ -45,4 +52,21 @@ img {
         opacity: 0.65;
     }
 }
+
+
+
+// // some tests
+// .wp-block-genesis-custom-blocks-blank-row--title-text-btn-smalltext-smalllink {
+//     .block-preview {
+//         background:green;
+//     }
+// }
+// .admin-page-id-291 {
+//     .wp-block-genesis-custom-blocks-blank-row--title-text-btn-smalltext-smalllink {
+//         .block-preview {
+//             background:red;
+//         }
+//     }
+// }
+
 

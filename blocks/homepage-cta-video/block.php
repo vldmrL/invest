@@ -10,8 +10,8 @@
                     </div>
                     <a href="#" class="cta-video__button btn btn-secondary">Start Trading Now</a>
                     <div class="cta-video__buy-links buy-links">
-                        <a href="#" class="btn-app -store"></a>
-                        <a href="#" class="btn-app -google"></a>
+                        <a href="<?php the_field('app-links_apple-download-link', 'options'); ?>" class="btn-app -store"></a>
+                        <a href="<?php the_field('app-links_google-download-link', 'options'); ?>" class="btn-app -google"></a>
                     </div>
                 </div>                
             </div>

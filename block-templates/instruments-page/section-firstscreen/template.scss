@@ -1,0 +1,48 @@
+@import '../../scss/_variables';
+@import '../../vendor/bootstrap/scss/mixins/breakpoints';
+
+.instruments-firstscreen {     
+    .block {  
+        font-size: 1.125rem;  
+        &__col {
+            &:nth-of-type(1){
+                @include media-breakpoint-down(sm) {
+                    margin-bottom: $mb-inner;
+                }
+            }
+        }    
+        &__title {
+            margin-top: 2rem;
+        }    
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+        &__text {
+            margin-bottom: $mb-inner
+        }    
+        &__bottons {
+            margin-bottom: 1.563rem;
+        }    
+        &__btn {
+        }    
+        &__small {          
+        }    
+        &__small-text {
+        }    
+        &__small-link {
+        }
+
+        &__widjet {
+            height: 360px;
+        }
+    }    
+}
+
+.parent-pageid-289 {
+    .instruments-firstscreen {
+        margin-top: 2.75rem; 
+    }
+}

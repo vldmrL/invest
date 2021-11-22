@@ -10,14 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <?php wp_head(); ?>
-<?php 
-	if ( is_page() ) {
-		$custom_css = get_field('css_custom-css');
-		if (!empty($custom_css)) {
-			echo '<style id="inline-page-css">' . $custom_css . '</style>';
-		}		
-	} 
-?>
+<?php inv_custom_header_scripts(); ?>
 </head>
 
 <body <?php body_class(); ?>  >
@@ -35,7 +28,6 @@
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-main-navbar-collapse-1" aria-controls="bs-main-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'decentralized' ); ?>">
 				<span class="navbar-toggler-icon"></span>
 			</button>				
-				
 				<?php
 				wp_nav_menu( array(
 					'theme_location'    => 'menu-main',
@@ -47,13 +39,9 @@
 					'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
 					'walker'            => new WP_Bootstrap_Navwalker(),
 				) );
-				?>			
-
-
-		 
+				?>		
 		  </div>
 		</nav>
-		
 		
 		<?php 
 		//utilities

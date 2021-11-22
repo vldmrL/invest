@@ -71,7 +71,7 @@
             </div> 
 
             <div class="article__banner">
-                <?php get_template_part( 'template-parts/banner', 'after-article' ); ?>         
+                <?php get_template_part( 'template-parts/banners/banner-after-article/banner' ); ?>         
             </div>        
 
             <div class="artiicle__comments">

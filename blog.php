@@ -14,7 +14,7 @@
 			</div>			
 
 
-			<?php get_template_part( 'template-parts/archive', 'slider-category' ); ?>			
+			<?php get_template_part( 'template-parts/blog/archive-slider-category' ); ?>			
 				
 			
 			<section class="featured-fullwidth-slider">				
@@ -29,7 +29,7 @@
 					));
 					while ( $query_featured->have_posts() ) {
 						$query_featured->the_post();
-						get_template_part( 'template-parts/loop', 'featured-fullwidth' );
+						get_template_part( 'template-parts/blog/article-loops/featured-fullwidth' );
 					}
 					wp_reset_postdata();
 					?>
@@ -54,7 +54,7 @@
 					));
 					while ( $query_top->have_posts() ) {
 						$query_top->the_post();
-						get_template_part( 'template-parts/loop', 'top-articles' );
+						get_template_part( 'template-parts/blog/article-loops/top-articles' );
 					}   
 					wp_reset_postdata();
 					?>    
@@ -79,7 +79,7 @@
 						$query_all->the_post();
 						?>
 						<div class="all-articles__col col-12 col-md-6 col-lg-4 post-item">
-							<?php get_template_part( 'template-parts/loop', 'all-articles' ); ?>
+							<?php get_template_part( 'template-parts/blog/article-loops/all-articles' ); ?>
 						</div>
 					<?php }
 					wp_reset_postdata();

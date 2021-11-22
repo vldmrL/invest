@@ -30,9 +30,9 @@
 
                     <div class="app-links__col">
 
-                        <a href="#" class="app-links__button btn-app -store"></a>
+                        <a href="<?php the_field('app-links_apple-download-link', 'options'); ?>" class="app-links__button btn-app -store"></a>
 
-                        <a href="#" class="app-links__button btn-app -google"></a>
+                        <a href="<?php the_field('app-links_google-download-link', 'options'); ?>" class="app-links__button btn-app -google"></a>
 
                     </div>
 
@@ -40,7 +40,7 @@
 
                     <div class="app-links__col">
 
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/baracode.png" alt="google play">
+                        <img src="<?php the_field('app-links_qr-code-download', 'options'); ?>" alt="google play">
 
                     </div>
 
