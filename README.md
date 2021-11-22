@@ -99,10 +99,11 @@ Documentation about gutenberg custom blocks can be found [here](url).
 - each block should have a preview
 
 ### Block templates
-For a faster and more smooth workflow we use predefiend *blank blocks* as a template loaders with some user input fields. Input data is passed to template using ```get_template_part($template_path, , $input_data``` function. 
+For a faster and more smooth workflow we use predefiend *blank blocks* as a template loaders with some user input fields. Input data is passed to template using `get_template_part($template_path, , $input_data);` function. 
 All blank blocks are accessable from *Invest Blank* category and contain available user input fields in their [naming](#block-naming). 
 
 ---
+
 **Core features**
 - Each blank block has a *template* input field. It is located in inspectors field  section on Edit Page screen (the right pannel).*[screenshot](url)*
 - To connect a templte, please copy/paste your template path in the following format: `block-templates/folder/template` (without .php extention) to the *template* input field. 
