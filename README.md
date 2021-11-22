@@ -62,7 +62,7 @@ Currently, the following option pages are available from the admin panel.
 **Edit Post** screen
 - marketing (campaign id, affiliate id, and post views). All fields are disabled, they are used to show info passed to CRM
 
-======
+---
 ## Custom blocks
 The project uses a modular development system where possible.
 All website pages should be divided into *"user sreens"* (sections). For this purpose, we use Gutenberg custom blocks functionality, with limited user input.
@@ -139,7 +139,7 @@ All blank blocks are accessible from *Invest Blank* category and contain availab
 - If your block or templates need some additional styles or scripts to work, please add them using `wp_enqueue_script(script-id)` and `wp_enqueue_style('style-id')` functions.
 - Template path can be can be copy/pasted to *template* input fieild. It has some str_replace() functionality to make windows paths work as well. For VS Code, for example, right click -> Copy Relative Path (or `ctr + shift + C`) should work.
 
-
+---
 ## Theme Javascript
 The theme uses [jQuery-3.5.1](https://releases.jquery.com/jquery/) and [Bootstrap-4.6.0](https://getbootstrap.com/docs/4.6/getting-started/introduction/).
 They should be available on any page of the project.
@@ -172,6 +172,7 @@ They should be available on any page of the project.
 
 The list of all registered scripts can be found [here](configure/js-css.php)
 
+---
 ## Theme css
 Css info will be here
 
