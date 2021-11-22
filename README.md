@@ -92,14 +92,14 @@ Documentation about gutenberg custom blocks can be found [here](url).
 - please, follow the [naming](#block-naming)
 - all blocks should be added to their respectful category
 - block .css and .js files should be located in the same folder as the block.php
-- all bock ***scripts should be [registered]***(#theme-javascript)
+- all bock ***scripts should be [registered](#theme-javascript)***
 - all user defined fields (content) should be registered in *Editor fields*, while all developers fields (ID's, classes, etc) in *inspector fields*
 - try use human-readable slugs for fields
 - dont forget to add logical search keywords
 - each block should have a preview
 
 
-### Block templates
+
 For a faster and more smooth workflow we use predefiend *blank blocks* as a template loaders with some user input fields. Input data is passed to template using `get_template_part( $template_path,, $input_data` function. 
 All blank blocks are accessable from *Invest Blank* category and contain available user input fields in their [naming](#block-naming). 
 ---
