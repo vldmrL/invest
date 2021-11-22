@@ -49,9 +49,10 @@ Currently, the following option pages are available from the admin panel.
 - all global banner settings.
 
 **Widget setting** 
-- data to show in Tradingview widgets.<br>
-*All of these options are used globally across the site, please change them with care.*
+- data to show in Tradingview widgets.
 
+*All of these options are used globally across the site, please change them with care.*
+---
 **Edit Page** screen
 - general settings (breadcrumbs, widget in header, color theme restrictions)
 - page jsavascript (additional .js file to load on this page, inline javascript)
