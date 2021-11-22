@@ -83,7 +83,7 @@ blank-row--title-subtitle-text-btn
 blank-col--image-title
 blank-col--image-title-text-btn
 ```
-**blank-row** - parent blocks that have "inner blocks" field available, where another guttenberg blocks can be placed (images, embed video, text editor, other custom blocks, etc). They should be wrapped with <section></section> tags.
+**blank-row** - parent blocks that have "inner blocks" field available, where another guttenberg blocks can be placed (images, embed video, text editor, other custom blocks, etc). They should be wrapped with `<section></section>` tags.
 **blank-col** - child blocks that can be put inside blank-row--* blocks.
 
 ##### Block structure
