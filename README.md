@@ -1,5 +1,4 @@
-# Invest.com - developers guide
-A WordPress theme for Invest.com project
+A WordPress theme for the Invest.com project
 ---
 Requirements: PHP 7.1+
 <br>Frameworks: jQuery-3.5.1, Bootstrap-4.6.0
@@ -20,7 +19,7 @@ Document anchors
 - [Theme css](#theme-css)
 
 ## File structure
-The project folder will contain files for the main website, blog, and various landing pages.
+The project folder will contain files for the main website, blog, and various landing pages.<br>
 **General project file structure.** <!-- More details can be found in each folder. -->
 ```
 theme folder/
@@ -46,9 +45,11 @@ Currently, the following option pages are available from the admin panel.
 - company social profiles
 - global tracking code snippets
 
-**Banner setting** - all global banner settings.
+**Banner setting** 
+- all global banner settings.
 
-**Widget setting** - data to show in Tradingview widgets.
+**Widget setting** 
+- data to show in Tradingview widgets.<br>
 *All of these options are used globally across the site, please change them with care.*
 
 **Edit Page** screen
@@ -69,21 +70,22 @@ Blocks are registered and managed by the genesis-custom-blocks WordPress plugin.
 Gutenberg block editor [handbook](https://developer.wordpress.org/block-editor/).
 
 **Block categories** available from Edit Page (or Edit Post) screen:
-
 - *Invest* - general theme blocks, that may be used again later
 - *Invest Banners* - reusable banners, usually configured from theme admin panel options page
 - *Invest Widgets* - reusable widgets, usually configured from theme admin panel options page
-- *Invest-Blank* - main theme template manager blocks, used for creating pages.
+- *Invest-Blank* - template loaders, used for creating pages.
 
 **All blocks should be added to their respectful category!*
 
 ---
 ### Block naming
-*For non-blank blocks*, please try to keep `${what}-${where}-${name}` naming structure.
+For *non-blank* blocks, please try to keep `${what}-${where}-${name}` naming structure.<br>
 Example: `widget-homepage-market-overview`
 
-For blocks in *Invest-blank* category, the naming is pretty much self-explanatory. `${type}--&{inpit-fields-avaliable}`
+For blocks in *Invest-blank* category, the naming is pretty much self-explanatory. <br>
+`${type}--&{inpit-fields-avaliable}`<br>
 Examples:
+
 ```
 blank-row--title-subtitle
 blank-row--title-subtitle-text-btn
@@ -101,8 +103,7 @@ blank-col--image-title-text-btn
 - please, follow the [naming](#block-naming)
 - all blocks should be added to their respectful category
 - block .css and .js files should be located in the same folder as the block.php
-- all bock ***scripts should be [registered](#registering-javascript-files)!***
-<!-- - follow css [styling rules](#block-styles) -->
+- all bock *scripts should be [registered](#registering-javascript-files)!* 
 - all user defined fields (content) should be located in *Editor fields*, while all developers fields (ID's, classes, etc) in *inspector fields*
 - use human-readable slugs for fields
 - dont forget to add logical search keywords
@@ -146,7 +147,7 @@ They should be available on any page of the project.
 - jQuery.js
 - Bootstrap.js
 - theme-functions.js
--*...other scripts...*
+- *...other scripts...*
 - theme.js
 
 *[theme-functions.js](js/theme-functions.js)* - reusable utility functions should be placed here<br>
@@ -154,7 +155,7 @@ They should be available on any page of the project.
 
 ---
 ### Registering javascript files
-:!: ***Impportant note:*** all srcipts used in project should be registered with `wp_register_script()` function in [configure/js-css.php](configure/js-css.php) first!<br>
+📌 ***Impportant note:*** all srcipts used in project should be registered with `wp_register_script()` function in [configure/js-css.php](configure/js-css.php) first!<br>
 
 **Common rules:**
 - Register scripts with `wp_register_script()` [Function reference](https://developer.wordpress.org/reference/functions/wp_register_script/).
