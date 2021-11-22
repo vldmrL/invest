@@ -1,8 +1,8 @@
 A Wordpress theme for Invest.com project
 ---
 Requirements: PHP 7.1+
-Frameworks: jQuery-3.5.1, Bootstrap-4.6.0
-Core plugins: ACF, genesis custom blocks
+<br>Frameworks: jQuery-3.5.1, Bootstrap-4.6.0
+<br>Core plugins: ACF, genesis custom blocks
 
 ## Readme links
 Document anchors
@@ -18,10 +18,10 @@ Document anchors
 
 ## Description
 ***Some general project description here***
-Project folder contains files for:
-  main website
-  blog
-  various landing pages
+<br>Project folder contains files for:
+<br>  main website
+<br>  blog
+<br>  various landing pages
 
 ## File structure
 General project file structure. More details can be found in each folder.
@@ -41,13 +41,16 @@ theme folder/
 ---
 ## Theme options
 Currently the following option pages are available from admin panel.
+
 **Invest theme** 
 - default theme styling 
 - general company information 
 - often used links
 - company social profiles
 - global tracking code snipets
+
 **Banner setting** - all global banner settings.
+
 **Widget setting** - data to show in Tradingview widgets .
 *All of these options are used globaly across the site, please change them with care.*
 
@@ -55,6 +58,7 @@ Currently the following option pages are available from admin panel.
 - general settings (breadcrumbs, widget in header, color theme restrictions)
 - page jsavascript (additional .js file to load on this page, inline javascript)
 - page css (additional .css file to load on this page, inline css)
+
 **Edit Post** screen
 - marketing (compaign id, affiliate id and post views). All fields are disabled, they are used to show info passed to CRM
 
@@ -65,10 +69,15 @@ All common website pages should be divided into *user sreens* (sections). For th
 Blocks are registered and managed by genesis-custom-blocks wordpress plugin. A user guide and documentation about the plaguin can be found [here](https://link)
 
 There are several block categories available from Edit Page (or Edit Post) screen:
+
 **Invest** - general theme blocks, that may be used again later
+
 **Invest Banners** - reusable banners, usually configured from theme admin pannel options page
+
 **Invest Widgets** - reusable widgets, usually configured from theme admin pannel options page
+
 **Invest-Blank** - main theme template manager blocks, used for creating pages.
+
 **All blocks should be added to their respectful category.*
 
 ### Block naming
@@ -84,10 +93,12 @@ blank-col--image-title
 blank-col--image-title-text-btn
 ```
 **blank-row** - parent blocks that have "inner blocks" field available, where another guttenberg blocks can be placed (images, embed video, text editor, other custom blocks, etc). They should be wrapped with `<section></section>` tags.
+
 **blank-col** - child blocks that can be put inside blank-row--* blocks.
 
 ### Block structure
 Documentation about gutenberg custom blocks can be found [here](url).
+
 **A few common rules:**
 - please, follow the [naming](#block-naming)
 - all blocks should be added to their respectful category
@@ -101,6 +112,7 @@ Documentation about gutenberg custom blocks can be found [here](url).
 
 ### Block template files
 For a faster and more smooth workflow we use predefiend *blank blocks* as a template loaders with some user input fields. Input data is passed to template using `get_template_part($template_path, , $input_data);` function. 
+
 All blank blocks are accessable from *Invest Blank* category and contain available user input fields in their [naming](#block-naming). 
 
 ---
