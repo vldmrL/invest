@@ -36,6 +36,7 @@ img {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .components-modal__content .components-modal__header {
@@ -73,18 +74,3 @@ img {
   color: #6c757d;
   opacity: 0.65;
 }
-
-/*
-.wp-block-genesis-custom-blocks-blank-row--title-text-btn-smalltext-smalllink {
-    .block-preview {
-        background:green;
-    }
-}
-.admin-page-id-291 {
-    .wp-block-genesis-custom-blocks-blank-row--title-text-btn-smalltext-smalllink {
-        .block-preview {
-            background:red;
-        }
-    }
-}
-*/

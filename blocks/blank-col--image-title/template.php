@@ -11,7 +11,6 @@
 ?>
 
 <?php 
-// wp_enqueue_script($template_id, $template_path.".js");  // load template.js from same folder (in footer, no order control).
 // wp_enqueue_script("script-id");  // load previously registered script
 // wp_enqueue_style('style-id'); // load some other registered styles
 ?>

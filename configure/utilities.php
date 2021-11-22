@@ -89,6 +89,17 @@ function show_breadcrumbs(){
 }
 
 
+
+// //add body class for admin
+// function inv_admin_page_body_class($classes) {   	
+// 	$admn_page_id = " admin-page-id-" . get_queried_object_id() . " ";
+// 	$classes .= $admn_page_id;
+//     return $classes;
+// }
+// add_filter('admin_body_class', 'inv_admin_page_body_class');
+
+
+
 /*
 //AJAX category function
 add_action( 'wp_ajax_loadPostsArchive', 'load_more_archive' );

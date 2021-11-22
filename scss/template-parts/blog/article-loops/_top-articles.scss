@@ -1,0 +1,38 @@
+.top-articles {
+
+    &__section-header {
+    }
+
+    &__slider {
+    }
+
+    &__slider-wrapper {
+        @include media-breakpoint-down(sm){
+            flex-direction: column;
+        }
+    }
+
+    &__item {
+        @include media-breakpoint-down(sm){
+            margin-bottom: $mb-inner;
+        }
+    }
+
+    &__item-inner {
+    }
+
+    &__image-wrap {
+    }
+
+    &__thubnail {
+    }
+
+    &__text-wrap {
+    }
+
+    &__title {
+    }
+
+    &__exerpt {
+    }
+}

@@ -4,8 +4,8 @@
 function inv_register_scripts() {
 	//bootstrap
 	wp_register_script( 'jquery', 'https://code.jquery.com/jquery-3.5.1.min.js', array(), null, false);
-	wp_register_script( 'popper', 'https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js', array('jquery'), null, false);    	
-	wp_register_script( 'bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js', array('jquery', 'popper'), null, false);
+	// wp_register_script( 'popper', 'https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js', array('jquery'), null, false);    	
+	wp_register_script( 'bootstrap', 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js', array('jquery'), null, false);
 	//tools
 	wp_register_script( 'swiper', 'https://unpkg.com/swiper@7/swiper-bundle.min.js', array('jquery'), null, true);
 	wp_register_script( 'AOS', 'https://unpkg.com/aos@2.3.1/dist/aos.js', array('jquery'), null, true);		
@@ -17,13 +17,12 @@ function inv_register_scripts() {
 	//template-parts
 	wp_register_script( 'archive-slider-category', get_template_directory_uri() . '/js/templte-parts/archive-slider-category.js', array('swiper'), null, true);  
 	//blocks
-	wp_register_script( 'about-us-block', get_template_directory_uri() . '/blocks/homepage-about-us/block.js', array('swiper'), null, true); 
+	wp_register_script( 'homepage-about-us', get_template_directory_uri() . '/block-templates/homepage/about-us/template.js', array('swiper'), null, true); 
 	wp_register_script( 'blog-numbers-block', get_template_directory_uri() . '/blocks/blog-numbers/block.js', array('theme-functions', 'countTo'), null, true);
 
 	wp_register_script( 'theme', get_template_directory_uri() . '/js/theme.js', array('theme-functions', 'AOS', 'bootstrap'), null, true);
 }
 add_action( 'wp_enqueue_scripts', 'inv_register_scripts' );
-
 
 //load scripts on front end
 function inv_add_javascript() {	
@@ -41,11 +40,8 @@ function inv_register_stylesheets() {
 	wp_register_style('blog', get_template_directory_uri() . '/css/blog.css', array('AOS'), '1.0.3', 'all' );
 	//tools
 	wp_register_style('AOS', 'https://unpkg.com/aos@2.3.1/dist/aos.css', array(), null, 'all' );
-	wp_register_style('swiper', 'https://unpkg.com/swiper@7/swiper-bundle.min.css', array(), null, 'all' );	
-	//blocks
-	// wp_register_style('instruments-page-section-firstscreen', get_template_directory_uri() . '/block-templates/instruments-page/section-firstscreen/template.css', array('theme', 'AOS'), null, 'all'  );
+	wp_register_style('swiper', 'https://unpkg.com/swiper@7/swiper-bundle.min.css', array(), null, 'all' );		
 }
-add_action('wp_enqueue_scripts', 'inv_register_stylesheets');
 
 //load styles on front end
 function inv_add_stylesheets() {	
@@ -55,6 +51,7 @@ function inv_add_stylesheets() {
 		wp_enqueue_style('theme');
 	}				
 }	
+add_action('wp_enqueue_scripts', 'inv_register_stylesheets');
 add_action('wp_enqueue_scripts', 'inv_add_stylesheets');
 
 
@@ -67,20 +64,19 @@ function inv_admin_styles() {
 	wp_enqueue_style('admin-styles', get_template_directory_uri() . '/css/admin-styles.css', array(), null, 'all' );
 }
 
+
 //login page
 function inv_login_logo() { 
 	wp_enqueue_style('login-register', get_template_directory_uri() . '/css/login-register.css', array(), null, 'all' );
  }
-add_action( 'login_enqueue_scripts', 'inv_login_logo' );
-
 function inv_login_logo_url() {
     return home_url();
-}
-add_filter( 'login_headerurl', 'inv_login_logo_url' );
- 
+} 
 function inv_login_logo_url_title() {
     return 'Invest.com';
 }
+add_action( 'login_enqueue_scripts', 'inv_login_logo' );
+add_filter( 'login_headerurl', 'inv_login_logo_url' );
 add_filter( 'login_headertext', 'inv_login_logo_url_title' );
 
 
@@ -93,12 +89,3 @@ function dequeue_jquery_migrate( &$scripts){
 add_filter( 'wp_default_scripts', 'dequeue_jquery_migrate' );
 
 
-
-
-// //add body class for admin
-// function inv_admin_page_body_class($classes) {   	
-// 	$admn_page_id = " admin-page-id-" . get_queried_object_id() . " ";
-// 	$classes .= $admn_page_id;
-//     return $classes;
-// }
-// add_filter('admin_body_class', 'inv_admin_page_body_class');

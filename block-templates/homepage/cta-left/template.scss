@@ -1,0 +1,32 @@
+@import '../../../scss/_variables';
+@import '../../../vendor/bootstrap/scss/mixins/breakpoints';
+
+
+.cta-left {      
+
+    &__content-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__header {
+    }
+
+    &__content {
+    }
+
+    &__image-wrap {
+    }
+
+    &__image {
+        width: 100%;
+        height: auto;
+        margin-top: -2rem;
+        margin-bottom: -3rem;
+        @include media-breakpoint-down(md) {
+            margin: 0;
+        }
+    }
+}
+

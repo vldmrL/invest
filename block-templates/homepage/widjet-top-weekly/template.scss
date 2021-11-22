@@ -1,0 +1,11 @@
+@import '../../../scss/_variables';
+@import '../../../vendor/bootstrap/scss/mixins/breakpoints';
+
+.homepage-widjet-top-weekly{
+  .block__widjet {
+        height: 450px;
+        border-radius:$border-radius;
+        overflow: hidden;
+        background-color: $dark-1;
+  }
+}
