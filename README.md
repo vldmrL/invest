@@ -62,7 +62,7 @@ Currently, the following option pages are available from the admin panel.
 **Edit Post** screen
 - marketing (campaign id, affiliate id, and post views). All fields are disabled, they are used to show info passed to CRM
 
-
+======
 ## Custom blocks
 The project uses a modular development system where possible.
 All website pages should be divided into *"user sreens"* (sections). For this purpose, we use Gutenberg custom blocks functionality, with limited user input.
