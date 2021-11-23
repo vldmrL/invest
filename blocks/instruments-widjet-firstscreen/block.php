@@ -1,4 +1,4 @@
-<section class="instruments-widjet-firstscreen <?php block_field('add-class'); ?>">    
+<section class="instruments-widjet-firstscreen">    
     <div class="container">
         <div class="row block">
 
@@ -22,52 +22,7 @@
 
             <div class="col-md-6 col-lg-6 offset-lg-1 block__col">  
                 <div class="block__widjet bg-dark-1 rounded">
-                    <!-- TradingView Widget BEGIN -->
-                    <div class="tradingview-widget-container">
-                        <div class="tradingview-widget-container__widget"></div>
-                        <!-- <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Crypto</span></a> by TradingView</div> -->
-                        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
-                        {
-                        "colorTheme": "dark",
-                        "dateRange": "12M",
-                        "showChart": false,
-                        "locale": "en",
-                        "width": "100%",
-                        "height": "100%",
-                        "largeChartUrl": "http://dev-invest.markdev.site/instruments/instrument",
-                        "isTransparent": true,
-                        "showSymbolLogo": true,
-                        "showFloatingTooltip": true,
-                        "tabs": [
-                            {
-                            "title": "Crypto",
-                            "symbols": [
-                                {
-                                "s": "COINBASE:BTCUSD",
-                                "d": "BTC"
-                                },
-                                {
-                                "s": "BINANCE:BTCUSDT"
-                                },
-                                {
-                                "s": "BITSTAMP:BTCUSD"
-                                },
-                                {
-                                "s": "BINANCE:ETHUSDT"
-                                },
-                                {
-                                "s": "BITSTAMP:ETHUSD"
-                                },
-                                {
-                                "s": "BINANCE:TRXUSDT"
-                                }
-                            ]
-                            }
-                        ]
-                        }
-                        </script>
-                    </div>
-                    <!-- TradingView Widget END -->
+                    <?php get_template_part( block_value('add-class'), null); ?>              
                 </div>           
                 
             </div>
