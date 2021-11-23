@@ -4,8 +4,7 @@ Requirements: PHP 7.1+
 <br>Frameworks: jQuery-3.5.1, Bootstrap-4.6.0
 <br>Core plugins: Advanced Custom Fields Pro, genesis custom blocks.
 
-## Readme links
-Document anchors
+## Readme anchors
 <!-- - [General description](#description) -->
 - [File structure](#file-structure)
 - [Theme options](#theme-options)
@@ -17,6 +16,9 @@ Document anchors
   - [Load order](#load-order)
   - [Registering scripts](#registering-javascript-files)
 - [Theme css](#theme-css)
+  - [File structure](#styles-file-structure)
+  - [Dark and Light modes](#dark-and-light-modes)
+  - [General rules](#general-rules)
 
 ## File structure
 The project folder will contain files for the main website, blog, and various landing pages.<br>
@@ -132,7 +134,7 @@ All blank blocks are accessible from *Invest Blank* category and contain availab
 - For [block styling](#block-styling) BEM is requiered
 ---
 **Usefull tips**
-- By default, you can access input values inside template by using `echo $args['field_slug']`. If you copy/pasted template from a block folder, you can also use variables. Example: `echo $title`.
+- By default, you can access input values inside template by using `echo $args['field_slug']`. If you copy/pasted template from a block folder, you can also use variables. Example: `echo $field_slug`.
 - If your block or templates need some additional styles or scripts to work, please add them using `wp_enqueue_script(script-id)` and `wp_enqueue_style('style-id')` functions.
 - Template path can be can be copy/pasted to *template* input fieild. It has some str_replace() functionality to make windows paths work as well. For VS Code, for example, right click -> Copy Relative Path (or `ctr + shift + C`) should work.
 
@@ -171,7 +173,66 @@ The list of all registered scripts can be found [here](configure/js-css.php)
 
 ---
 ## Theme css
-Css info will be here
+Project uses SCSS extension language, BEM methodology and Bootstrap-4.6.0 framework.
+
+---
+### Styles file structure
+There 2 main styling sourses:
+1. General theme styles, located in [scss folder](/scss). They are compiled to `theme.css` and `blog.css` files, which should be loaded separately and be present on all pages of the site and blog accordingly.
+2. Stand-alone [block](/blocks) and [block-templates](block-templates/) styles loaded on demand. `block.css` and `temlate.css` files are loaded only if the block is present on the page.
+
+📌 Please, keep in mind that `theme.scss` and `blog.scss` use a bit different **bootstrap congigurations**
+
+**Very important links**
+- [_variables.scss](scss/_variables.scss) - all project variables should be stored here
+- [_variables-blog.scss](scss/blog-scss/_variables-blog.scss) - variables that will *OVERWRITE* default theme values for blog pages only
+- [_bootstrap-theme.scss](scss/theme-scss/_bootstrap-theme.scss) - bootsrap components included in main theme
+- [_bootstrap-theme-blog.scs](scss/blog-scss/_bootstrap-theme-blog.scss) - bootsrap components included in blog
+
+**Main theme**
+```
+theme-scss/
+    _blocks           - global block styles modifiacations, used for modifying default Gutenberg styles for inner blocks (included in blog.scss)
+    _bootstrap-theme  - bootsrap components included in main theme
+    _elements         - all small elements should go here (included in blog.scss)
+    _footer           - global styles for footer (included in blog.scss)
+    _nav              - global styles for navbar (included in blog.scss)
+    _theme-dark       - dark theme classes (included in blog.scss)
+    _theme-light      - light theme classes (included in blog.scss)
+    _theme            - main styling file, only @import's here
+```
+
+**Blog theme**
+```
+blog-scss/
+    _article              - styles for single post pages
+    _blog-general         - global styles for all blog pages
+    _bootstrap-theme-blog - bootsrap components included in blog
+    _category-page        - styles for all category pages
+    _variables-blog       - variables that will OVERWRITE default theme values for blog pages only
+```
+
+### Dark and Light modes
+The theme is designed to have a theme switcher between *dark* and *light* modes. <br>
+The mode is defined by one of two `<body>` classes: `theme-dark` and `theme-light`.
+
+Since the only difference between them is `color` and `background-color` for some of the elements, those two properties *should _never_ be defined strict*.
+Please use absolute classes `class-name--dark` and `class-name--light` for that. <br>
+**Example:**
+```
+.theme-dark {
+  .text-gray--dark {
+        color:$gray;
+    }
+}
+```
+All mode-specific color classes are located in [_theme-dark.scss](scss/theme-css/_theme-dark.scss) and [_theme-light.scss](scss/theme-css/_theme-light.scss) files.
+
+---
+### General rules
+- files which names start with underscore `_**.scss` are modules. They are ment to de imported to main `**.scss` files.
+- main `**.scss` files should not contain any rules or markup, only imported modules
+- all imports should go to main `**.scss` files. Please, do NOT import modules with css rules inside other modules (variables and utility functions can be imported anywhere).
 
 <!--
 - for block styling BEM is requiered

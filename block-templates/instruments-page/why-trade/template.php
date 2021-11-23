@@ -33,7 +33,7 @@
         <div class="row">
             <div class="col-md-6 col-lg-5 block__col"> 
                 <div class="block__left">                    
-                    <div class="block__text text-gray--dark mb-inner"  data-aos="fade-up">
+                    <div class="block__text text-gray--dark mb-5"  data-aos="fade-up">
                         <?php echo $text; ?>
                     </div>
                     <?php if ( !empty($button_text)  ) { ?>

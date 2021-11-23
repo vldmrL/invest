@@ -9,7 +9,7 @@
 			<div class="row">
 				<div class="col-12 col-md-6">
 
-					<div class="instrument__data instrument-data mb-inner">
+					<div class="instrument__data instrument-data mb-5">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/icons/gold.png" alt="" class="instrument-data__icon">
 						<div class="instrument-data__title">
 							<h1 class="instrument-data__name mb-0">Gold</h1>
@@ -17,7 +17,7 @@
 						</div>
 					</div>
 
-					<div class="instrument__numbers instrument-numbers mb-inner">
+					<div class="instrument__numbers instrument-numbers mb-5">
 						<div class="instrument-numbers__big">
 							<div class="instrument-numbers__number">4.4792</div>
 							<div class="instrument-numbers__currancy">USDT</div>
@@ -29,7 +29,7 @@
 						</div>
 					</div>
 
-					<div class="instrument__buttons instrument-buttons pb-inner mb-inner">
+					<div class="instrument__buttons instrument-buttons pb-inner mb-5">
 						<div class="instrument-buttons__small">
 							<a href="#" class="instrument-buttons__favoutite"><i class="icon icon-star"></i> Add favorite</a>
 							<a href="#" class="instrument-buttons__alert"><i class="icon icon-alert"></i> Set alert</a>
@@ -40,7 +40,7 @@
 						</div>
 					</div>
 
-					<div class="instrument__description instrument-description mb-inner">
+					<div class="instrument__description instrument-description mb-5">
 						<h3 class="instrument-description__title">Gold Company</h3>
 						<p class="instrument-description__text text-gray--dark">The value of gold is monitored by financial markets around the world. Gold was the backbone of the market economy for many hundreds of years before the abolition of the gold standard, which led to the emergence of fiduciary money, the nominal value of which is set and guaranteed by the state, regardless of the value of the material from which the money is made. In the periodic table of chemical elements, gold is denoted by the symbol "AU", and the common criterion for the whole world to measure the value of gold is the US dollar.</p>
 					</div>
