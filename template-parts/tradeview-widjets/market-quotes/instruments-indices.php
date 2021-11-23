@@ -24,7 +24,7 @@
           "name": "OANDA:US30USD"
         },
         {
-          "name": "OANDA:US30USD"
+          "name": "CURRENCYCOM:US100"
         },
         {
           "name": "CURRENCYCOM:US500"
