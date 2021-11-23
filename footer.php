@@ -72,7 +72,7 @@
 		<div class="row footer__info-row">
 			<div class="col-12 col-md-6">
 				<div class="footer__brand">
-					<div class="footer__logo"><img src="<?php echo get_template_directory_uri(); ?>/img/invest-white.png" alt=""></div>
+					<div class="footer__logo"><img src="<?php echo get_template_directory_uri(); ?>/img/Invest-white.png" alt=""></div>
 					<a href="mailto:<?php the_field('company-info_contact-email', 'options'); ?>" class="footer__email"><?php the_field('company-info_contact-email', 'options'); ?></a>
 				</div>
 				<div class="footer__copyright">©2021 All rights reserved</div>
